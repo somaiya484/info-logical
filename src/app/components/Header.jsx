@@ -27,7 +27,7 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="backdrop-blur-sm bg-[blue]/20 py-1 px-4 rounded-full hidden lg:flex text-gray-600 font-medium fixed right-8 z-30">
+                <div className="backdrop-blur-sm bg-[blue]/20 py-1 px-4 rounded-full hidden lg:flex text-gray-600 font-medium -mr-7">
                     <ul className="menu menu-horizontal px-1 text-base">
                         <li><Link href='/'>Home</Link></li>
                         <li>
