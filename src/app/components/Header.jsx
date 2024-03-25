@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
     return (
         <>
-            <div className="navbar bg-base-100 pt-14 pl-6">
+            <div className="navbar bg-base-100 pt-7 pl-6">
                 <div className="navbar-start">
                     <a className="text-4xl md:text-5xl font-bold z-30">Info Logical</a>
                     <div className="dropdown">
@@ -27,7 +27,7 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="backdrop-blur-sm bg-[blue]/20 py-1 px-4 rounded-full hidden lg:flex text-gray-600 font-medium -mr-7">
+                <div className="backdrop-blur-sm bg-[blue]/20  px-4 rounded-full hidden lg:flex text-gray-600 font-medium -mr-7">
                     <ul className="menu menu-horizontal px-1 text-base">
                         <li><Link href='/'>Home</Link></li>
                         <li>
