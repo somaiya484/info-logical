@@ -1,29 +1,35 @@
 import Image from 'next/image'
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";import HeydawBlur from './HeydawBlur';
+;
 
 
 const Banner = () => {
     return (
-        <div className='md:flex gap-20 justify-between items-center mt-20 px-5 md:px-0'>
-            <div className='sm:text-center md:text-left md:w-[60%] md:pl-20'>
-                <h1 className='text-6xl font-bold'>Turbo Charge Global Growth with Hyper-Local Market Insights</h1>
+        <div className="bg-[url('')] ">
 
-                <p className='text-base mt-10 text-gray-500 leading-6'>Every market is getting more competitive. Global players are still expanding and homegrown challengers are stronger than ever. Winning requires a granular understanding of the local consumer and retailer landscape. Rwazi leverages hundreds of thousands of consumers to tell you in real time what they buy, why they buy, and where they buy. Execute with confidence to improve performance in existing markets and launch successfully in new ones.</p>
-                <div className='mt-10 flex justify-center md:justify-start gap-5'>
-                    <button className='btn bg-btn rounded-full'>Learn More</button>
+            <div className='pt-14'>
+                <div className='text-center bg-gray-800 py-1 md:py-2 w-1/2 md:w-[35%] mx-auto rounded-2xl'>
 
-                    <button className='btn bg-transparent border-none '>How it Works!  <MdOutlineKeyboardArrowRight className='text-2xl' /></button>
-
+                    <p className='md:text-xl font-bold bg-gradient-to-r from-indigo-100 via-purple-400 to-blue-400 text-transparent bg-clip-text animate-gradient '>Welcome To InfoLogic Solution</p>
                 </div>
             </div>
 
-
-            <div>
-
-                <img
-                className='w-[700px]'
-                    src="https://i.ibb.co/Cnf20NS/internet-earth-64735.png" alt="" />
+            <div className='text-center mt-10 '>
+                <h2 className='text-4xl md:text-[44px] md:w-3/4 mx-auto font-bold leading-[60px]'>The Global, Web Design, PPC, SEO & Logical Data-Driven <span className='bg-gradient-to-r from-indigo-700 via-purple-600 to-blue-600 text-transparent bg-clip-text'>Digital Marketing Agency</span></h2>
             </div>
+
+            <div className='text-center mt-10 text-lg  font-semibold w-3/4 mx-auto'>
+                <p>Go To <span className='bg-gradient-to-r from-indigo-700 to-purple-600 text-transparent bg-clip-text'>|</span> Easy Contract <span className='bg-gradient-to-r from-indigo-700 to-purple-600 text-transparent bg-clip-text'>|</span> Specialize Team</p>
+            </div>
+
+            <div className='mt-10 flex justify-center md:justify-start gap-5 w-[34%] mx-auto '>
+                <button className='btn bg-btn rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-fuchsia-500 hover:to-violet-500 transition duration-300 ease-in-out text-lg'>Explore Services <MdKeyboardDoubleArrowDown className='text-xl' /></button>
+
+                <button className='btn bg-transparent border-purple-700 hover:border-purple-700 hover:bg-transparent border-2 primary-text text-lg'>Get Free Consultation</button>
+
+            </div>
+            
+            {/* <HeydawBlur animate={false} position={`hidden md:flex brightness-95  md:top-5`}/> */}
         </div>
     );
 };

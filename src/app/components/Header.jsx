@@ -12,7 +12,7 @@ const Header = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
+                            <li className=""><a>Home</a></li>
                             <li>
                                 <a>Parent</a>
                                 <ul className="p-2">
@@ -27,9 +27,9 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="backdrop-blur-sm bg-[blue]/20  px-4 rounded-full hidden lg:flex text-gray-600 font-medium -mr-7">
+                <div className=" px-4 rounded-full hidden lg:flex text-gray-600 font-medium -mr-7">
                     <ul className="menu menu-horizontal px-1 text-base">
-                        <li><Link href='/'>Home</Link></li>
+                        <li><Link href='/' className="hover:bg-none focus:bg-transparent">Home</Link></li>
                         <li>
                             <details>
                                 <summary>Parent</summary>
