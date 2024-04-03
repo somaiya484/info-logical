@@ -8,21 +8,16 @@ const Company = () => {
             <div >
                 <Marquee pauseOnHover className='order g-4 '>
                     <div className="flex items-center gap-28">
-                        <div className="grayscale hover:grayscale-0">
-                            <img className="w-32" src="https://i.ibb.co/jZ1SFDN/channels4-profile-removebg-preview.png" alt="" />
-                        </div>
-                        <div className="grayscale hover:grayscale-0">
-                            <img className="w-32" src="https://i.ibb.co/bLbnq4B/Autodesk-Logo-removebg-preview.png" alt="" />
-                        </div>
-                        <div className="grayscale hover:grayscale-0">
-                            <img className="w-32" src="https://i.ibb.co/HxkW6fL/Intel-Logo-Design-in-BLue-1024x640-removebg-preview.png" alt="" />
-                        </div>
-                        <div className="grayscale hover:grayscale-0">
-                            <img className="w-32" src="https://i.ibb.co/s5nx3K5/download-removebg-preview.png" alt="" />
-                        </div>
-                        <div className="grayscale hover:grayscale-0">
-                            <img className="w-32" src="https://i.ibb.co/pJzyNhN/download-1-removebg-preview.png" alt="" />
-                        </div>
+
+                        <img className="w-32" src="https://i.ibb.co/jZ1SFDN/channels4-profile-removebg-preview.png" alt="" />
+
+                        <img className="w-32" src="https://i.ibb.co/bLbnq4B/Autodesk-Logo-removebg-preview.png" alt="" />
+
+                        <img className="w-32" src="https://i.ibb.co/HxkW6fL/Intel-Logo-Design-in-BLue-1024x640-removebg-preview.png" alt="" />
+
+                        <img className="w-32" src="https://i.ibb.co/s5nx3K5/download-removebg-preview.png" alt="" />
+
+                        <img className="w-32" src="https://i.ibb.co/pJzyNhN/download-1-removebg-preview.png" alt="" />
                     </div>
 
                 </Marquee>

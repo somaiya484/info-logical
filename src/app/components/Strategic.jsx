@@ -5,9 +5,9 @@ import { RiMicrosoftLoopFill } from "react-icons/ri";
 const Strategic = () => {
     return (
         <>
-            <div className='mt-8 '>
+            {/* <div className='mt-8 '>
                 <img className='w-[95%] mx-auto border-4 border-black rounded-2xl z-0' src="https://i.ibb.co/WzWWVqM/Rwazi-dash-viz-Consumer-p-800.webp" alt="" />
-            </div>
+            </div> */}
 
 
             <div className="md:flex pt-28 bg-white">

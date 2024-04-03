@@ -9,17 +9,21 @@ import OurPackage from './components/OurPackage';
 import ContactEmail from './components/ContactEmail';
 import Testimonial from './components/Testimonial';
 import Message from './components/Message';
+import ClickPinnacle from './components/ClickPinnacle';
+import WhyChooseUs from './components/WhyChooseUs';
 
 const Home = () => {
   return (
     <>
       <Banner></Banner>
       <Company></Company>
-      <ConsumerData></ConsumerData>
-      <Strategic></Strategic>
-      <Message></Message>
+      {/* <ConsumerData></ConsumerData> */}
+      <ClickPinnacle></ClickPinnacle>
+      <WhyChooseUs></WhyChooseUs>
       <CompanyGrowth></CompanyGrowth>
-      <MarketDetails></MarketDetails>
+      {/* <Strategic></Strategic> */}
+      <Message></Message>
+      {/* <MarketDetails></MarketDetails> */}
       <OurPackage></OurPackage>
       <Testimonial></Testimonial>
       <ContactEmail></ContactEmail>

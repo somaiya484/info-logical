@@ -6,7 +6,7 @@ import { AiOutlineStock } from "react-icons/ai";
 
 const CompanyGrowth = () => {
     return (
-        <div className=' mt-28 px-5 md:px-0 sm:text-center md:text-left  '>
+        <div className='mt-56 px-5 md:px-0 sm:text-center md:text-left'>
             <h1 className='text-5xl font-bold pl-20 md:w-[52%]'>A Closer Look at How Offline Consumer Data Can Grow Your Company</h1>
 
             <div className="px-8 md:grid  md:grid-cols-3 gap-x-6 gap-y-2 mt-7">

@@ -2,37 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-.primary-text{
-    color: #3730A3;
-}
-.bg-btn{
-    background-color: #3730A3;
-    color: rgb(235, 234, 234);
-}
-.bg-btn:hover{
-    color: black;
+.primary-text {
+  color: #3730A3;
 }
 
-.list-text{
-    font-size: 14px;
-    color: black;
+.bg-btn {
+  background-color: #3730A3;
+  color: rgb(235, 234, 234);
 }
+
+.bg-btn:hover {
+  color: black;
+}
+
+.list-text {
+  font-size: 14px;
+  color: black;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-indigo-700 via-purple-600 to-blue-600 text-transparent bg-clip-text;
+}
+
+.primary-button {
+  @apply btn bg-btn rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-fuchsia-500 hover:to-violet-500 transition duration-300 ease-in-out text-lg
+}
+
+.secondary-button {
+  @apply btn bg-transparent border-purple-700 hover:border-purple-700 hover:bg-transparent border-2 primary-text text-lg
+}
+.services-button {
+  @apply bg-white border-white primary-text hover:text-white hover:border-purple-700 hover:bg-purple-700 border-2 px-3 py-1 rounded-full transition duration-200 ease-in-out text-lg
+}
+
 
 .animate-gradient {
-    background-size: 300%;
-    -webkit-animation: animatedgradient 6s ease infinite alternate;
-    -moz-animation: animatedgradient 6s ease infinite alternate;
-    animation: animatedgradient 6s ease infinite alternate;
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes animatedgradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+  50% {
+    background-position: 100% 50%;
   }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";import HeydawBlur from './HeydawBlur';
-;
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 
 const Banner = () => {
@@ -15,17 +14,17 @@ const Banner = () => {
             </div>
 
             <div className='text-center mt-10 '>
-                <h2 className='text-4xl md:text-[44px] md:w-3/4 mx-auto font-bold leading-[60px]'>The Global, Web Design, PPC, SEO & Logical Data-Driven <span className='bg-gradient-to-r from-indigo-700 via-purple-600 to-blue-600 text-transparent bg-clip-text'>Digital Marketing Agency</span></h2>
+                <h2 className='text-4xl md:text-[44px] md:w-3/4 mx-auto font-bold leading-[60px]'>The Global, Web Design, PPC, SEO & Logical Data-Driven <span className='text-gradient'>Digital Marketing Agency</span></h2>
             </div>
 
             <div className='text-center mt-10 text-lg  font-semibold w-3/4 mx-auto'>
-                <p>Go To <span className='bg-gradient-to-r from-indigo-700 to-purple-600 text-transparent bg-clip-text'>|</span> Easy Contract <span className='bg-gradient-to-r from-indigo-700 to-purple-600 text-transparent bg-clip-text'>|</span> Specialize Team</p>
+                <p>Go To <span className='text-gradient'>|</span> Easy Contract <span className='text-gradient'>|</span> Specialize Team</p>
             </div>
 
             <div className='mt-10 flex justify-center md:justify-start gap-5 w-[34%] mx-auto '>
-                <button className='btn bg-btn rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-fuchsia-500 hover:to-violet-500 transition duration-300 ease-in-out text-lg'>Explore Services <MdKeyboardDoubleArrowDown className='text-xl' /></button>
+                <button className='primary-button'>Explore Services <MdKeyboardDoubleArrowDown className='text-xl' /></button>
 
-                <button className='btn bg-transparent border-purple-700 hover:border-purple-700 hover:bg-transparent border-2 primary-text text-lg'>Get Free Consultation</button>
+                <button className='secondary-button'>Get Free Consultation</button>
 
             </div>
             

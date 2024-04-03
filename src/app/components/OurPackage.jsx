@@ -1,69 +1,71 @@
-import { FaCheck } from "react-icons/fa6";
+import { MdComputer } from "react-icons/md";
+import { FaSearch, FaDatabase, FaServicestack  } from "react-icons/fa";
 
 const OurPackage = () => {
     return (
         <div className='mt-28'>
 
-            <h1 className="text-4xl font-bold text-center ">Get Started in less than 5 minutes</h1>
-            <p className="text-center text-base mt-5 text-gray-500">Scale smoothly and build to last on Rwazi</p>
+            {/* <h1 className="text-4xl font-bold text-center ">Get Started in less than 5 minutes</h1> */}
+            <h2 className='text-center text-5xl font-bold primary-text'>Begin in just under 5 mins!</h2>
+            <p className="text-center text-base mt-5 text-gray-500">Access all the services you need in one place: branding, website design, development, and digital marketing.</p>
 
-            <div className="md:flex items-center justify-center gap-7 mt-9 px-9 md:px-0">
+            <div className="md:flex items-center justify-center gap-7 mt-9 px-9 ">
 
-                <div className="border-2 border-indigo-700  px-16 py-9 mt-4">
-                    <h1 className="text-2xl font-semibold">Free</h1>
-                    <p className="text-5xl primary-text font-semibold mt-3">$0</p>
+                <div className="px-7 py-9 mt-4 bg-violet-500 text-white rounded">
+                    <div className="text-center">
+                        <MdComputer className="text-6xl font-semibold mt-3 mx-auto"></MdComputer>
+                        <h1 className="text-2xl font-semibold my-8">Website Services Hub</h1>
+                    </div>
 
-                    <ul className="list-outside list-disc marker:text-indigo-700 marker:text-lg my-5" >
-                        <li>5 Templates</li>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 2</li>
-                        <li>User 5</li>
+                    <p className="leading-7 font-light">Discover all the necessary website design, development, maintenance, and optimization services to convert visitors into customers, and beat your competitors.</p>
+
+                    <ul className="list-outside list-decimal marker:text-lg my-9 ml-5 leading-10" >
+                        <li>Website Design+Development Services</li>
+                        <li>Website Optimization Services</li>
+                        <li>Website Maintenance Services</li>
+                        <li>Landing Page Design</li>
+                        <li>Bug fixing</li>
+                        <li>Website speed optimization</li>
                     </ul>
-
-                    <button className="px-5 py-2 bg-btn rounded-sm">Get Plan</button>
+                    <button className='services-button flex items-center gap-3'>Explore Services <FaSearch /></button>
                 </div>
-                <div className="border-2 border-indigo-700  px-16 py-9 mt-4">
-                    <h1 className="text-2xl font-semibold">Individual</h1>
-                    <p className="text-5xl primary-text font-semibold mt-3">$29</p>
 
-                    <ul className="list-outside list-disc marker:text-indigo-700 marker:text-lg my-5" >
-                        <li>10 Templates</li>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 2</li>
-                        <li>User 15</li>
+                <div className="px-7 py-9 mt-4 bg-indigo-500 text-white rounded">
+                    <div className="text-center">
+                        <FaDatabase className="text-6xl font-semibold mt-3 mx-auto"></FaDatabase>
+                        <h1 className="text-2xl font-semibold my-8">Data Analytics Hub</h1>
+                    </div>
+
+                    <p className="leading-7 font-light">Establish or enhance your brand identity with our complete branding services and stand out in today's crowded marketplace.</p>
+
+                    <ul className="list-outside list-decimal marker:text-lg my-9 ml-5 leading-10" >
+                        <li>Converting conversion tracking</li>
+                        <li>Analytical tools integration</li>
+                        <li>Pixel conversion API installation</li>
+                        <li>Looker reporting dashboard</li>
+                        <li>Data analysis</li>
+                        <li>Marketing decisions</li>
                     </ul>
-
-                    <button className="px-5 py-2 bg-btn rounded-sm">Get Plan</button>
+                    <button className='services-button flex items-center gap-3'>Explore Services <FaSearch /></button>
                 </div>
-                <div className="border-2 border-[#86cf5f] bg-[#86cf5f] px-16 py-9 text-white mt-4">
-                    <h1 className="text-2xl font-semibold">Business</h1>
-                    <p className="text-5xl primary-text font-semibold mt-3">$59</p>
 
-                    <ul className="list-outside list-disc marker:text-indigo-700 marker:text-lg my-5" >
-                        <li>15 Templates</li>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 2</li>
-                        <li>User 20</li>
+                <div className="px-7 py-9 mt-4 bg-purple-500 text-white rounded">
+                    <div className="text-center">
+                        <FaServicestack  className="text-6xl font-semibold mt-3 mx-auto"></FaServicestack >
+                        <h1 className="text-2xl font-semibold my-8">Marketing Services Hub</h1>
+                    </div>
+
+                    <p className="leading-7 font-light">Our digital marketing services help you connect, communicate, and convert your potential audience into customers in today's competitive digital landscape.</p>
+
+                    <ul className="list-outside list-decimal marker:text-lg my-9 ml-5 leading-10" >
+                        <li>Website Design+Development Services</li>
+                        <li>Website Optimization Services</li>
+                        <li>Website Maintenance Services</li>
+                        <li>Landing Page Design</li>
+                        <li>Bug fixing</li>
+                        <li>Website speed optimization</li>
                     </ul>
-
-                    <button className="px-5 py-2 bg-btn rounded-sm">Get Plan</button>
-                </div>
-                <div className="border-2 border-indigo-700  px-16 py-9 mt-4">
-                    <h1 className="text-2xl font-semibold">Premium</h1>
-                    <p className="text-5xl primary-text font-semibold mt-3">$89</p>
-
-                    <ul className="list-outside list-disc marker:text-indigo-700 marker:text-lg my-5" >
-                        <li>20 Templates</li>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 2</li>
-                        <li>User 25</li>
-                    </ul>
-
-                    <button className="px-5 py-2 bg-btn rounded-sm">Get Plan</button>
+                    <button className='services-button flex items-center gap-3'>Explore Services <FaSearch /></button>
                 </div>
             </div>
 
