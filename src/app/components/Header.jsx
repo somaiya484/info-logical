@@ -1,12 +1,12 @@
 import Link from "next/link";
-
+import Image from 'next/image'
 
 const Header = () => {
     return (
         <>
-            <div className="navbar bg-base-100 pt-7 pl-6">
+            <div className="navbar bg-base-100 pt-7 bg-white text-black">
                 <div className="navbar-start">
-                    <a className="text-4xl md:text-5xl font-bold z-30">Info Logical</a>
+                   <img className="absolute ml-0 mt-0" src="https://i.ibb.co/NCTfTWf/Logo-removebg-preview.png" alt="" />
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>

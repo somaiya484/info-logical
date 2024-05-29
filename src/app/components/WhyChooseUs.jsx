@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
             <h2 className='text-center text-5xl font-bold primary-text'>Why Choose Us?</h2>
 
             <div className="mt-16">
-                <div className="z-10 h-3/4 w-2/5 bg-indigo-500 absolute rounded-r-lg"></div>
+                <div className="z-10 h-[520px] w-2/5 bg-indigo-500 absolute rounded-r-lg"></div>
                 <div className="flex justify-evenly pt-12 items-center">
 
                     <img className="z-30 w-2/5 rounded-lg" src="https://static.wixstatic.com/media/4999b3_135781e4cedc4c07aacd471cba4f6cbc~mv2.jpg/v1/crop/x_0,y_236,w_6750,h_4495/fill/w_659,h_441,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pexels-andrea-piacquadio-3760514.jpg" alt="" />
@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="mt-24">
-                <div className="z-10 h-3/4 w-2/5 bg-purple-600/35 absolute right-0 rounded-l-lg"></div>
+                <div className="z-10 h-[500px] w-[500px] bg-purple-600/35 absolute right-[183px] rounded-l-lg"></div>
                 <div className="flex justify-evenly pt-12 items-center">
 
                     <div>
@@ -35,10 +35,10 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="mt-24">
-                <div className="z-10 h-3/4 w-2/5 bg-lime-500/60 absolute rounded-r-lg"></div>
+                <div className="z-10 h-[520px] w-2/5 bg-lime-500/60 absolute rounded-r-lg"></div>
                 <div className="flex justify-evenly pt-20 items-center">
 
-                    <img className="z-30 w-1/3 rounded-lg" src="https://static.wixstatic.com/media/4999b3_7fa9eb3aea124057abd9c771dbbc2161~mv2.jpg/v1/crop/x_0,y_0,w_5965,h_4004/fill/w_515,h_345,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pexels-fauxels-3183150.jpg" alt="" />
+                    <img className="z-30 w-1/3 rounded-lg ml-36" src="https://static.wixstatic.com/media/4999b3_7fa9eb3aea124057abd9c771dbbc2161~mv2.jpg/v1/crop/x_0,y_0,w_5965,h_4004/fill/w_515,h_345,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pexels-fauxels-3183150.jpg" alt="" />
 
                     <div>
                         <h3 className="text-5xl ">Brand Management</h3>

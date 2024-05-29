@@ -2,26 +2,37 @@ import Marquee from "react-fast-marquee";
 
 const Company = () => {
     return (
-        <div className='mt-28 ml-8'>
-            <h1 className='primary-text font-semibold text-lg'>Company we have worked with</h1>
+        <div className='mt-60 mx-8 pb-32'>
+            <h2 className='text-center text-5xl font-bold primary-text'>Amazing Client</h2>
+            <p className="text-center text-xl mt-6">The company we keep. We are honored to partner with a diverse range of clients from various industries. <br /> We believe direct collaboration Our commitment to delivering exceptional results has earned us <br /> the trust and loyalty of some of the most respected brands and companies. </p>
 
-            <div >
-                <Marquee pauseOnHover className='order g-4 '>
-                    <div className="flex items-center gap-28">
+            <Marquee pauseOnHover speed={100} className='order g-4 '>
+                <div className="flex items-center gap-28">
+                    <img className="w-44" src="https://i.ibb.co/jZ1SFDN/channels4-profile-removebg-preview.png" alt="" />
 
-                        <img className="w-32" src="https://i.ibb.co/jZ1SFDN/channels4-profile-removebg-preview.png" alt="" />
+                    <img className="w-44" src="https://i.ibb.co/bLbnq4B/Autodesk-Logo-removebg-preview.png" alt="" />
 
-                        <img className="w-32" src="https://i.ibb.co/bLbnq4B/Autodesk-Logo-removebg-preview.png" alt="" />
+                    <img className="w-44" src="https://i.ibb.co/HxkW6fL/Intel-Logo-Design-in-BLue-1024x640-removebg-preview.png" alt="" />
 
-                        <img className="w-32" src="https://i.ibb.co/HxkW6fL/Intel-Logo-Design-in-BLue-1024x640-removebg-preview.png" alt="" />
+                    <img className="w-44" src="https://i.ibb.co/s5nx3K5/download-removebg-preview.png" alt="" />
 
-                        <img className="w-32" src="https://i.ibb.co/s5nx3K5/download-removebg-preview.png" alt="" />
+                    <img className="w-44" src="https://i.ibb.co/pJzyNhN/download-1-removebg-preview.png" alt="" />
+                </div>
+            </Marquee>
 
-                        <img className="w-32" src="https://i.ibb.co/pJzyNhN/download-1-removebg-preview.png" alt="" />
-                    </div>
+            <Marquee pauseOnHover speed={100} className='order g-4 -mt-16'>
+                <div className="flex items-center gap-28">
+                    <img className="w-44" src="https://i.ibb.co/HxkW6fL/Intel-Logo-Design-in-BLue-1024x640-removebg-preview.png" alt="" />
 
-                </Marquee>
-            </div>
+                    <img className="w-44" src="https://i.ibb.co/jZ1SFDN/channels4-profile-removebg-preview.png" alt="" />
+
+                    <img classNae="w-44" src="https://i.ibb.co/pJzyNhN/download-1-removebg-preview.png" alt="" />
+
+                    <img className="w-44" src="https://i.ibb.co/bLbnq4B/Autodesk-Logo-removebg-preview.png" alt="" />
+
+                    <img className="w-44" src="https://i.ibb.co/s5nx3K5/download-removebg-preview.png" alt="" />
+                </div>
+            </Marquee> 
         </div>
     );
 };

@@ -10,24 +10,30 @@ import ContactEmail from './components/ContactEmail';
 import Testimonial from './components/Testimonial';
 import Message from './components/Message';
 import ClickPinnacle from './components/ClickPinnacle';
+import AboutUs from './components/AboutUs';
+import Service from './components/Service';
 import WhyChooseUs from './components/WhyChooseUs';
 
 const Home = () => {
   return (
-    <>
+    <div className='bg-white text-black font-sans '>
       <Banner></Banner>
-      <Company></Company>
-      {/* <ConsumerData></ConsumerData> */}
-      <ClickPinnacle></ClickPinnacle>
-      <WhyChooseUs></WhyChooseUs>
-      <CompanyGrowth></CompanyGrowth>
-      {/* <Strategic></Strategic> */}
+      <AboutUs></AboutUs>
+      <Service></Service>
       <Message></Message>
-      {/* <MarketDetails></MarketDetails> */}
-      <OurPackage></OurPackage>
-      <Testimonial></Testimonial>
+      <WhyChooseUs></WhyChooseUs>
+      <Company></Company>
       <ContactEmail></ContactEmail>
-    </>
+      <Testimonial></Testimonial>
+      {/* <ConsumerData></ConsumerData> */}
+      {/* <ClickPinnacle></ClickPinnacle> */}
+      {/* <CompanyGrowth></CompanyGrowth> */}
+      {/* <Strategic></Strategic> */}
+      {/* <Message></Message> */}
+      {/* <MarketDetails></MarketDetails> */}
+      {/* <OurPackage></OurPackage> */}
+     
+      </div>
   );
 };
 
