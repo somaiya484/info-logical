@@ -1,6 +1,6 @@
 import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { IoMailOutline, IoLocationOutline } from "react-icons/io5";
-import Company from "../components/Company";
+import Company from "../../components/Company";
 
 const Contact = () => {
     return (

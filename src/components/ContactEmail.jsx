@@ -12,9 +12,6 @@ const ContactEmail = () => {
                 <button className='primary-button mt-10'>Contact US <IoMdCall className='text-xl' /></button>
             </div>
         </div>
-
-
-
     );
 };
 

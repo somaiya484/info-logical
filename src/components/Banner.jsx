@@ -16,10 +16,10 @@ const Banner = () => {
             </div>
 
             <div className='text-center mt-10 '>
-                <h2 className='text-6xl md:text-6xl md:w-3/4 mx-auto leading-[60px]'>The Global, Web Design, SEO & Logical Data-Driven <span className='text-gradient font-bold'>Digital Marketing Agency</span></h2>
+                <h2 className='text-3xl md:text-6xl md:w-3/4 mx-auto leading-[60px]'>The Global, Web Design, SEO & Logical Data-Driven <span className='text-gradient font-bold'>Digital Marketing Agency</span></h2>
             </div>
 
-            <div className="h-full flex justify-center items-center mt-10 text-xl text-semibold">
+            <div className="h-full flex justify-center items-center mt-10 sm:text-lg md:text-xl text-semibold">
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
@@ -37,18 +37,18 @@ const Banner = () => {
                     wrapper="span"
                     speed={50}
                     repeat={Infinity}
-                />
+                    />
             </div>
 
 
-            <div className='mt-10 flex justify-center md:justify-start gap-5 w-[34%] mx-auto '>
+            <div className='mt-10 flex justify-center md:justify-start gap-5 w-[34%] mx-auto'>
                 <button className='primary-button'>Explore Services <MdKeyboardDoubleArrowDown className='text-xl' /></button>
 
                 <button className='secondary-button'>Get Free Consultation</button>
 
             </div>
 
-            <div className='text-center mt-10 text-lg  font-semibold w-3/4 mx-auto'>
+            <div className='text-center mt-10 md:text-lg  font-semibold w-3/4 mx-auto'>
                 <p>Go To <span className='text-gradient'>|</span> Easy Contract <span className='text-gradient'>|</span> Specialize Team</p>
             </div>
             {/* <HeydawBlur animate={false} position={`hidden md:flex brightness-95  md:top-5`}/> */}

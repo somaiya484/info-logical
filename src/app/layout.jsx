@@ -1,5 +1,7 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+// import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <main className='container mx-auto min-h-screen'>
-          <Header></Header>
+        <Navbar></Navbar>
           {children}
           <Footer></Footer>
 

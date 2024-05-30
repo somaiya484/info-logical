@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            <footer className="footer text-black py-16  text-white">
+            <footer className="footer text-black py-16  text-white px-5">
                 <div>
-                    <img className="w-[250px]" src="https://i.ibb.co/mSwYzRH/Logo-removebg-preview.png" alt="" />
+                <img className="w-[250px]" src="https://i.ibb.co/mSwYzRH/Logo-removebg-preview.png" alt="" />
                     <p className='mt-5'>Thank you for visiting our website. <br /> We appreciate your support and look forward <br /> to helping you achieve your goals. <br /> Here's to success and collaboration!</p>
                 </div>
                 <nav>

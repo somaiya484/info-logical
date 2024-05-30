@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar';
 
 const Testimonial = () => {
     return (
-        <div className='py-16 md:flex items-center gap-14 py-6'>
+    <div className='md:py-24 md:flex items-center gap-14 py-6'>
 
             <div className='pl-10'>
                 <p className='italic text-gray-400 primary-text font-bold'>Reviews</p>
@@ -43,6 +43,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className=' py-6 px-4'>
                         <p className='mt-7 italic text-gray-800'>A pharmaceutical company used Rwazi to gather data on the availability and pricing of medicines across pharmacies across Nigeria as well as the accessibility of medical services in the country.</p>
@@ -56,6 +57,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className=' py-6 px-4'>
                         <p className='mt-7 italic text-gray-800'>A global financial services company used Rwazi to obtain data on usage and demand of banking and fintech products across 60 cities to boost customer acquisition through consumer-driven products</p>
@@ -69,6 +71,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className=' py-6 px-4'>
                         <p className='mt-7 italic text-gray-800'>A pharmaceutical company used Rwazi to gather data on the availability and pricing of medicines across pharmacies across Nigeria as well as the accessibility of medical services in the country.</p>
@@ -89,9 +92,3 @@ const Testimonial = () => {
 
 export default Testimonial;
 
-
-// export default () => {
-//   return (
-//
-//   );
-// };

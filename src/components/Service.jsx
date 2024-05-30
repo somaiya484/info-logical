@@ -4,9 +4,11 @@ const Service = () => {
     return (
         <div className='mt-32'>
             <h2 className='text-center text-5xl font-bold primary-text'>Things we provide!</h2>
-            <p className="text-center text-xl my-6"> Let's take your brand to the next level with our comprehensive suite of <br /> marketing services.</p>
+            <p className="text-center md:text-xl my-6"> Let's take your brand to the next level with our comprehensive suite of <br /> marketing services.</p>
 
-            <div className="flex justify-center items-center gap-16 mx-32 mt-16">
+            {/* part one */}
+            <div className="md:flex justify-center items-center gap-16 md:mx-32 mt-16">
+
                 <div className="shadow-inner rounded px-3 py-7">
                     <img src="https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg" alt="" className="w-[600px] h-[300px]"
                     />
@@ -20,7 +22,7 @@ const Service = () => {
                         <p className="border-b w-full border-gray-300">Wix Design & Development</p>
                         <p className="border-b w-full border-gray-300">Frontend Development</p>
                     </div>
-                    <button className='secondary-button mt-5 w-1/4 hover:scale-100'>Learn More</button>
+                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
                 </div>
 
                 <div className="shadow-inner rounded px-3 py-7">
@@ -36,12 +38,12 @@ const Service = () => {
                         <p className="border-b w-full border-gray-300">Wix Design & Development</p>
                         <p className="border-b w-full border-gray-300">Frontend Development</p>
                     </div>
-                    <button className='secondary-button mt-5 w-1/4 hover:scale-100'>Learn More</button>
+                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
                 </div>
             </div>
 
             {/* Part 2 */}
-            <div className="flex justify-center items-center gap-10 mx-32 mt-14">
+            <div className="md:flex justify-center items-center gap-10 md:mx-32 mt-14">
                 <div className="shadow-inner rounded px-3 py-7">
                     <img src="https://i.ibb.co/WGPmvrD/austin-distel-t-LZh-FRLj6n-Y-unsplash.jpg" className="w-[700px] h-[300px]" alt=""
                     />
