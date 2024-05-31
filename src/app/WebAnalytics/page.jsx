@@ -1,210 +1,238 @@
-import { MdOutlineAssessment, MdOutlineDataExploration, MdOutlineCollectionsBookmark, MdRecommend, } from "react-icons/md";
+import {
+    MdWifiProtectedSetup,
+    MdOutlineAssessment,
+    MdOutlineDataExploration,
+    MdOutlineCollectionsBookmark,
+    MdTipsAndUpdates,
+} from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
-import Message from "../../components/Message";
 import { IoMdCall } from "react-icons/io";
+import Message from "../../components/Message";
+import Link from "next/link";
 
 const WebAnalytics = () => {
+
+    const sections = [
+        {
+            id: 1,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Google Tag Manager",
+            description:
+                "Implement and manage your website’s tags efficiently with Google Tag Manager. We set up and configure tags to track important data, ensuring you get accurate insights without slowing down your site",
+            link: "/contact",
+        },
+        {
+            id: 2,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Conversion API",
+            description:
+                "Accurately track conversions and customer interactions with our Conversion API services. We integrate your website with various platforms to provide detailed analytics that help you optimize your marketing strategies.",
+            link: "/contact",
+        },
+        {
+            id: 3,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Pixel Installation",
+            description:
+                "Maximize your ad campaigns' effectiveness with precise pixel tracking. We install and configure tracking pixels from platforms like Facebook and Google to monitor user actions and optimize your marketing efforts.",
+            link: "/contact",
+        },
+        {
+            id: 4,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Google Analytics",
+            description:
+                "Optimize your Google Ads campaigns with in-depth analytics and insights. We track and analyze your ad performance, providing detailed reports and recommendations to improve your ad strategies and maximize ROI. From keyword performance to ad spend efficiency, we ensure your Google Ads drive the best possible results.",
+            link: "/contact",
+        },
+        {
+            id: 5,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Other Marketing Platforms Analytics ",
+            description:
+                "Lastly, our expert team can also provide you with both the client and server sides with Pinterest, Snap, TikTok, Microsoft Ads, and Twitter Linkedin Conversion Tracking",
+            link: "/contact",
+        },
+    ];
+
+    const processSteps = [
+        {
+            id: 1,
+            icon: MdWifiProtectedSetup,
+            title: "1. Setup & Configuration",
+            description:
+                "We set up and configure analytics tools on your website, ensuring accurate data collection.",
+        },
+        {
+            id: 2,
+            icon: MdOutlineDataExploration,
+            title: "2. Data Collection & Integration",
+            description:
+                "We integrate various data sources to provide a holistic view of your website's performance and user interactions..",
+        },
+        {
+            id: 3,
+            icon: MdOutlineCollectionsBookmark,
+            title: "3. Analysis & Interpretation",
+            description:
+                "Our team analyzes the collected data to identify trends, patterns, and areas for improvement.",
+        },
+        {
+            id: 4,
+            icon: MdTipsAndUpdates,
+            title: "4. Reporting",
+            description:
+                "We deliver detailed reports that provide actionable insights and recommendations based on our analysis.",
+        },
+        {
+            id: 5,
+            icon: FaHandsHelping,
+            title: "5. Continuous Improvement",
+            description:
+                "We work with you to implement changes and track their impact, continuously optimizing your web analytics strategy.",
+        },
+    ];
+
+    const workSamples = [
+        {
+            id: 1,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+        {
+            id: 2,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+        {
+            id: 3,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+    ];
+
     return (
         <div className="bg-white text-black">
             <div className="bg-fixed bg-[url('https://i.ibb.co/CQPDZv7/marvin-meyer-SYTO3xs06f-U-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
                 <div className="absolute inset-0 bg-black opacity-80"></div>
-                <div className='text-center relative z-10 text-white'>
-                    <h2 className='text-5xl my-6 leading-10 font-semibold'>Empower Your Business with <span className='text-gradient font-bold'>Web Analytics</span></h2>
-                    <p> Our data analytics services at Info Logic Solution leverage powerful tools like Looker Studio and Power BI <br /> to transform raw data into actionable insights. We help you make informed decisions that<br /> drive growth and improve business performance.</p>
+                <div className="text-center relative z-10 text-white">
+                    <h1 className="font-semibold">Web Analytics</h1>
+                    <h2 className="text-5xl my-8 font-semibold leading-[60px]">
+                        Unlock Actionable Insights with Advanced <br /> {" "}
+                        <span className="text-gradient font-bold ">Web Analytics</span>
+                    </h2>
+                    <p>
+                        Info Logic Solution offers comprehensive web analytics services to <br /> help you understand your website's performance and user behavior for both client and server sides. <br /> We use tools like Google Tag Manager, Conversion API, Google Analytics, <br /> and other marketing platforms to provide insights that drive informed business decisions.
+                    </p>
                 </div>
             </div>
 
             {/* Choose Yours one - 2nd section */}
-            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">Choose Yours one</h1>
-            <div className="flex justify-between items-center md:mx-14">
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg" alt="" className="w-[600px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Looker Studio</h2>
-                    <p >Our Expert Looker Master will transform your data into clear, actionable insights with Looker Studio. We design custom dashboards and reports that help you visualize your data and make informed business decisions.</p>
-
-                    <button className='secondary-button mt-5  hover:scale-100'>Contact us</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg" alt="" className="w-[600px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Power BI</h2>
-                    <p >
-                        Unlock the power of your data with Microsoft Power BI. Our experts create interactive dashboards and reports that provide in-depth insights into your business performance, helping you drive strategic decisions
-                    </p>
-
-                    <button className='secondary-button mt-5  hover:scale-100'>Contact us</button>
-                </div>
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Choose Yours one
+            </h1>
+            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+                {sections.map((section) => (
+                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                        <img
+                            src={section.img}
+                            alt={section.title}
+                            className="w-[600px] h-[300px]"
+                        />
+                        <h2 className="text-4xl my-5">{section.title}</h2>
+                        <p>{section.description}</p>
+                        <Link href={section.link}>
+                            <button className="secondary-button mt-5 hover:scale-100">
+                                Reach us
+                            </button>
+                        </Link>
+                    </div>
+                ))}
             </div>
 
             {/* Our Visualization Process - 3rd section */}
-            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">Our Visualization Process</h1>
-            <p className="text-center">Do you dream of exploring the furthest reaches of outer space? <br />Do you live for bringing brands to life and finding new ways to tell exciting brand stories? <br />If so, you may have just found your people.</p>
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Our Visualization Process
+            </h1>
+            <p className="text-center">
+                Do you dream of exploring the furthest reaches of outer space? <br />
+                Do you live for bringing brands to life and finding new ways to tell exciting
+                brand stories? <br />
+                If so, you may have just found your people.
+            </p>
 
-            <div className="flex flex-col md:flex-row md:mx-14 mt-16">
+            <div className="flex flex-col md:flex-row md:mx-14 mt-5  gap-7">
                 <div className="md:w-1/2">
-                    <div className="flex items-center gap-7 ">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <div>
-                            <h3 className="text-2xl font-semibold">1. Data Assessment</h3>
-                            <p>We start by assessing your current data sources and analytics needs.</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-7 mt-16">
-                        <MdOutlineCollectionsBookmark className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <div>
-                            <h3 className="text-2xl font-semibold">3. Analysis & Visualization</h3>
-                            <p>Using advanced analytics tools, we analyze the data and create <br /> visualizations that highlight key insights.</p>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center items-center gap-7 mt-14">
-                        <FaHandsHelping className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <div>
-                            <h3 className="text-2xl font-semibold">5. Ongoing Support</h3>
-                            <p>We offer continuous support to help you refine your data analytics strategy<br /> and ensure long-term success</p>
-                        </div>
-                    </div>
+                    {processSteps
+                        .filter((_, index) => index % 2 === 0)
+                        .map((step) => (
+                            <div key={step.id} className="flex items-center gap-7 mt-16">
+                                <step.icon className="bg-orange-600 p-2 w-[60px] rounded-full text-5xl text-white" />
+                                <div>
+                                    <h3 className="text-2xl font-semibold">{step.title}</h3>
+                                    <p>{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
                 </div>
                 <div className="md:w-1/2">
-                    <div className="flex items-center gap-7 ">
-                        <MdOutlineDataExploration className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <div>
-                            <h3 className="text-2xl font-semibold">2. Data Collection & Integration</h3>
-                            <p>We gather and integrate data from multiple sources to create a comprehensive dataset.</p>
+                    {processSteps
+                        .filter((_, index) => index % 2 !== 0)
+                        .map((step) => (
+                            <div key={step.id} className="flex items-center gap-7 mt-16">
+                                <step.icon className="bg-orange-600 p-2 w-[70px] text-center rounded-full text-5xl text-white" />
+                                <div>
+                                    <h3 className="text-2xl font-semibold">{step.title}</h3>
+                                    <p>{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                </div>
+            </div>
+
+            <Message />
+
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Work Samples
+            </h1>
+
+            {[0, 1, 2].map((row) => (
+                <div
+                    key={row}
+                    className={`md:flex items-center gap-10 md:mx-14 py-7 ${row !== 0 ? "-mt-7" : ""
+                        }`}
+                >
+                    {workSamples.map((sample) => (
+                        <div key={sample.id} className="shadow-lg py-7 px-4 rounded-lg">
+                            <img className="rounded" src={sample.img} alt={sample.title} />
+                            <div className="flex items-center gap-4 mt-5">
+                                <sample.icon className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
+                                <h3 className="text-2xl">{sample.title}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex items-center gap-7 mt-12">
-                        <MdRecommend className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <div>
-                            <h3 className="text-2xl font-semibold">4. Reporting & Recommendations</h3>
-                            <p>We provide detailed reports and recommendations based on our analysis, <br /> helping you understand and act on the insights.</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
-            </div>
-
-            <Message></Message>
-
-            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">Work Samples</h1>
-
-            {/* row 1 */}
-            <div className="md:flex items-center gap-10 md:mx-14 py-7">
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-            </div>
-
-            {/* row 2 */}
-            <div className="md:flex items-center gap-10 md:mx-14 py-7 -mt-7">
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-            </div>
-
-            {/* row 3 */}
-            <div className="md:flex items-center gap-10 md:mx-14 py-7 -mt-7">
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-            </div>
-
-            {/* row 4 */}
-            <div className="md:flex items-center gap-10 md:mx-14 py-7 -mt-7">
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-
-                <div className="shadow-lg py-7 px-4 rounded-lg">
-                    <img className="rounded" src="https://cratosai-backend.itechnolabs.tech/images/17105094850.png" alt="" />
-                    <div className="flex items-center gap-4 mt-5">
-                        <MdOutlineAssessment className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
-                        <h3 className="text-2xl">Google Ads - Light</h3>
-                    </div>
-                </div>
-            </div>
+            ))}
 
             {/* 4th section */}
-            <div className="w-2/4 mx-auto py-32 ">
-                <h1 className="text-gradient font-bold text-6xl mb-10 ">Let's Talk <br /> about Visualization</h1>
+            <div className="w-2/4 mx-auto py-32">
+                <h1 className="text-gradient font-bold text-6xl mb-10">
+                    Let's Talk <br /> about Visualization
+                </h1>
                 <p>
-                    We thrive on innovation and turning brilliant ideas into reality. Our goal is to create exceptional experiences through meticulous execution. If you share our passion, don't hesitate to reach out via phone or email to begin your journey with us.
+                    We thrive on innovation and turning brilliant ideas into reality. Our goal is
+                    to create exceptional experiences through meticulous execution. If you share
+                    our passion, don't hesitate to reach out via phone or email to begin your
+                    journey with us.
                 </p>
-                <button className='primary-button mt-5'>Contact Us <IoMdCall className='text-xl ml-2' /></button>
+                <Link href="/contact">
+                    <button className="primary-button mt-5">
+                        Contact Us <IoMdCall className="text-xl ml-2" />
+                    </button>
+                </Link>
             </div>
         </div>
     );

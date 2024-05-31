@@ -21,7 +21,7 @@
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-amber-700 via-orange-600 to-red-600 text-transparent bg-clip-text;
+  @apply bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 text-transparent bg-clip-text;
 }
 
 .primary-button {
