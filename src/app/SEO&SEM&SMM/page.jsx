@@ -18,7 +18,7 @@ const SEOSEMSMM = () => {
             img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
             title: "Search Engine Optimization (SEO)",
             description:
-                "Our SEO strategies are designed to improve your website's visibility in search engine results pages (SERPs), driving organic traffic and increasing your online presence. From on-page optimization to keyword research and content strategy, we ensure your website is optimized to rank higher and attract relevant visitors",
+                "Our SEO strategies are designed to improve your website's visibility in search engine results pages (SERPs), driving organic traffic and increasing your online presence. From on-page optimization to keyword research and content strategy, we ensure your website is optimized to rank higher and attract relevant visitors.",
             link: "/contact",
         },
         {
