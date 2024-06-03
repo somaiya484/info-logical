@@ -1,0 +1,233 @@
+import {
+    MdOutlineAppRegistration,
+    MdOutlineAssessment,
+    MdHourglassFull,
+    MdOutlineCollectionsBookmark,
+    MdRecommend,
+} from "react-icons/md";
+import { FaHandsHelping } from "react-icons/fa";
+import { IoMdCall } from "react-icons/io";
+import Message from "../../components/Message";
+import Link from "next/link";
+
+const WebDesignDevelopment = () => {
+
+    const sections = [
+        {
+            id: 1,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "WordPress Development:",
+            description:
+                "Leverage the power and flexibility of WordPress to build a dynamic and scalable website. Our team creates custom themes and plugins to meet your specific needs, ensuring your site is both user-friendly and SEO-optimized.",
+            link: "/contact",
+        },
+        {
+            id: 2,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Shopify Development:",
+            description:
+                "Build a robust e-commerce platform with Shopify. We design and develop beautiful, responsive online stores that provide an exceptional shopping experience for your customers while being easy to manage on the backend.",
+            link: "/contact",
+        },
+        {
+            id: 3,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Wix Development:",
+            description:
+                "Create stunning websites quickly with Wix. Our experts use the platform’s versatile tools to craft visually appealing and functional sites tailored to your brand, perfect for small businesses and personal projects.",
+            link: "/contact",
+        },
+        {
+            id: 4,
+            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            title: "Web Development:",
+            description:
+                "When your project requires a more bespoke approach, our front-end Development services are here to help. We develop unique, scalable websites and applications tailored precisely to your business requirements. ",
+            link: "/contact",
+        }
+    ];
+
+    const processSteps = [
+        {
+            id: 1,
+            icon: MdOutlineCollectionsBookmark,
+            title: "1. Discovery & Planning",
+            description:
+                "We start by understanding your goals, target audience, and requirements. This involves thorough research and planning to ensure we have a clear roadmap.",
+        },
+        {
+            id: 2,
+            icon: MdOutlineAppRegistration,
+            title: "2. Design & Prototype",
+            description:
+                "Our creative team designs a prototype that aligns with your brand identity. We will do whatever is your requirement and necessary to create an intuitive and engaging design.",
+        },
+        {
+            id: 3,
+            icon: MdHourglassFull,
+            title: "3. Development",
+            description:
+                "Once your design requirements are approved, our developers get to work building your site. We use the latest technologies to ensure your site is fast, secure, and scalable.",
+        },
+        {
+            id: 4,
+            icon: MdRecommend,
+            title: "4. Testing & Launch",
+            description:
+                "Before going live, we conduct thorough testing to ensure everything works perfectly. We then launch your site, ensuring it is fully optimized and ready to perform.",
+        },
+        {
+            id: 5,
+            icon: FaHandsHelping,
+            title: "4. Maintenance & Support",
+            description:
+                "Post-launch, we offer ongoing maintenance and support to keep your site updated and running smoothly.",
+        }
+    ];
+
+    const workSamples = [
+        {
+            id: 1,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+        {
+            id: 2,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+        {
+            id: 3,
+            img: "https://cratosai-backend.itechnolabs.tech/images/17105094850.png",
+            title: "Google Ads - Light",
+            icon: MdOutlineAssessment,
+        },
+    ];
+
+    return (
+        <div className="bg-white text-black">
+            <div className="bg-fixed bg-[url('https://i.ibb.co/PxHzBrJ/markus-winkler-Ir-Rb-SND5-EUc-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
+                <div className="absolute inset-0 bg-black opacity-80"></div>
+                <div className="text-center relative z-10 text-white">
+                    <h1 className="font-semibold">Web Design and Development</h1>
+                    <h2 className="text-5xl my-8 font-semibold leading-[60px]">
+                        Transform Your Online Presence with Stunning {" "} <br />
+                        <span className="text-gradient font-bold ">Website Design & Development </span>
+                    </h2>
+                    <p>
+                        At Info Logic Solution, we specialize in creating visually appealing and highly functional websites <br /> that reflect your brand's identity and engage your audience. Whether you need a site built on<br />  WordPress, Shopify, Wix, or a custom-coded solution, our team has the expertise to bring your vision to life.
+                    </p>
+                </div>
+            </div>
+
+            {/* Choose Yours one - 2nd section */}
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Choose Yours one
+            </h1>
+            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+                {sections.map((section) => (
+                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                        <img
+                            src={section.img}
+                            alt={section.title}
+                            className="w-[600px] h-[300px]"
+                        />
+                        <h2 className="text-4xl my-5">{section.title}</h2>
+                        <p>{section.description}</p>
+                        <Link href={section.link}>
+                            <button className="secondary-button mt-5 hover:scale-100">
+                                Reach us
+                            </button>
+                        </Link>
+                    </div>
+                ))}
+            </div>
+
+            {/* Our Visualization Process - 3rd section */}
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Our Development Process
+            </h1>
+            <p className="text-center">
+                Do you dream of exploring the furthest reaches of outer space? <br />
+                Do you live for bringing brands to life and finding new ways to tell exciting
+                brand stories? <br />
+                If so, you may have just found your people.
+            </p>
+
+            <div className="flex flex-col md:flex-row md:mx-14 mt-5  gap-7">
+                <div className="md:w-1/2">
+                    {processSteps
+                        .filter((_, index) => index % 2 === 0)
+                        .map((step) => (
+                            <div key={step.id} className="flex items-center gap-7 mt-16">
+                                <step.icon className="bg-orange-600 p-2 w-[100px] rounded-full text-5xl text-white" />
+                                <div>
+                                    <h3 className="text-2xl font-semibold">{step.title}</h3>
+                                    <p>{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                </div>
+                <div className="md:w-1/2">
+                    {processSteps
+                        .filter((_, index) => index % 2 !== 0)
+                        .map((step) => (
+                            <div key={step.id} className="flex items-center gap-7 mt-16">
+                                <step.icon className="bg-orange-600 p-2 w-[100px] text-center rounded-full text-5xl text-white" />
+                                <div>
+                                    <h3 className="text-2xl font-semibold">{step.title}</h3>
+                                    <p>{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                </div>
+            </div>
+
+            <Message />
+
+            <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
+                Work Samples
+            </h1>
+
+            {[0, 1, 2].map((row) => (
+                <div
+                    key={row}
+                    className={`md:flex items-center gap-10 md:mx-14 py-7 ${row !== 0 ? "-mt-7" : ""
+                        }`}
+                >
+                    {workSamples.map((sample) => (
+                        <div key={sample.id} className="shadow-lg py-7 px-4 rounded-lg">
+                            <img className="rounded" src={sample.img} alt={sample.title} />
+                            <div className="flex items-center gap-4 mt-5">
+                                <sample.icon className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
+                                <h3 className="text-2xl">{sample.title}</h3>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            ))}
+
+            {/* 4th section */}
+            <div className="w-2/4 mx-auto py-32">
+                <h1 className="text-gradient font-bold text-6xl mb-10">
+                    Let's Talk <br /> about Development
+                </h1>
+                <p>
+                    We thrive on innovation and turning brilliant ideas into reality. Our goal is
+                    to create exceptional experiences through meticulous execution. If you share
+                    our passion, don't hesitate to reach out via phone or email to begin your
+                    journey with us.
+                </p>
+                <Link href="/contact">
+                    <button className="primary-button mt-5">
+                        Contact Us <IoMdCall className="text-xl ml-2" />
+                    </button>
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+export default WebDesignDevelopment;

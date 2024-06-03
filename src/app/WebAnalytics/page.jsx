@@ -116,7 +116,7 @@ const WebAnalytics = () => {
 
     return (
         <div className="bg-white text-black">
-            <div className="bg-fixed bg-[url('https://i.ibb.co/CQPDZv7/marvin-meyer-SYTO3xs06f-U-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
+            <div className="bg-fixed bg-[url('https://i.ibb.co/dDQSgyb/visual.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
                 <div className="absolute inset-0 bg-black opacity-80"></div>
                 <div className="text-center relative z-10 text-white">
                     <h1 className="font-semibold">Web Analytics</h1>
@@ -155,7 +155,7 @@ const WebAnalytics = () => {
 
             {/* Our Visualization Process - 3rd section */}
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
-                Our Visualization Process
+                Our Analytics Process
             </h1>
             <p className="text-center">
                 Do you dream of exploring the furthest reaches of outer space? <br />
@@ -220,7 +220,7 @@ const WebAnalytics = () => {
             {/* 4th section */}
             <div className="w-2/4 mx-auto py-32">
                 <h1 className="text-gradient font-bold text-6xl mb-10">
-                    Let's Talk <br /> about Visualization
+                    Let's Talk <br /> about Analytics
                 </h1>
                 <p>
                     We thrive on innovation and turning brilliant ideas into reality. Our goal is

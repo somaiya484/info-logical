@@ -155,7 +155,7 @@ const SEOSEMSMM = () => {
 
             {/* Our Visualization Process - 3rd section */}
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
-                Our Visualization Process
+                Our Optimazation Process
             </h1>
             <p className="text-center">
                 Do you dream of exploring the furthest reaches of outer space? <br />
@@ -220,7 +220,7 @@ const SEOSEMSMM = () => {
             {/* 4th section */}
             <div className="w-2/4 mx-auto py-32">
                 <h1 className="text-gradient font-bold text-6xl mb-10">
-                    Let's Talk <br /> about Visualization
+                    Let's Talk <br /> about Optimization
                 </h1>
                 <p>
                     We thrive on innovation and turning brilliant ideas into reality. Our goal is

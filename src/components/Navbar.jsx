@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import { IoMdMenu, IoMdCall } from "react-icons/io";
+import Image from "next/image";
+import logo from "../../public/Logo.jpg"
 import Link from "next/link";
 
 const Navbar = () => {
@@ -9,7 +11,7 @@ const Navbar = () => {
         { name: "Web Analytics", link: "/WebAnalytics" },
         { name: "SEO SEM SMM", link: "/SEO&SEM&SMM" },
         { name: "Graphic Design", link: "/GraphicsDesign" },
-        { name: "Web Design & Development", link: "/GraphicsDesign" },
+        { name: "Web Design & Development", link: "/WebDesign&Development" },
     ];
     const [open, setOpen] = useState(false);
 
@@ -17,7 +19,14 @@ const Navbar = () => {
         <div className='w-full relative z-50'>
             <div className='flex items-center justify-between bg-white py-4 md:py-6 md:px-2 px-6 shadow-md'>
                 <div className='flex items-center'>
-                    <Link href='/'><img src="https://i.ibb.co/mSwYzRH/Logo-removebg-preview.png" alt="Logo" className="h-14" /></Link>
+                    <Link href='/'>
+                        <Image src={logo}
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                            className="h-14 w-[230px]"
+                        />
+                    </Link>
                 </div>
 
                 <div onClick={() => setOpen(!open)} className='text-3xl md:hidden cursor-pointer'>
@@ -28,7 +37,7 @@ const Navbar = () => {
                     {
                         Links.map((link) => (
                             <li key={link.name} className='md:ml-4 lg:ml-6 md:mt-0 mt-2'>
-                                <Link href={link.link} className='text-gray-800 hover:text-orange-600 duration-200 block md:inline-block font-semibold'>{link.name}</Link>
+                                <Link href={link.link} className='text-gray-800 hover:text-orange-600 focus:text-orange-600 duration-200 block md:inline-block font-semibold'>{link.name}</Link>
                             </li>
                         ))
                     }

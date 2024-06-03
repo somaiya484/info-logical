@@ -1,20 +1,29 @@
-import React from 'react';
+import Link from 'next/link';
+import Image from "next/image";
+import logoFooter from '../../public/logoFooter.png'
 
 const Footer = () => {
     return (
         <>
             <footer className="footer bg-slate-900 text-white py-16 px-5">
                 <div>
-                <img className="w-[250px]" src="https://i.ibb.co/26JmcW8/ILS.png" alt="" />
+                    <Link href='/'>
+                        <Image src={logoFooter}
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                            className="w-[250px]"
+                        />
+                    </Link>
                     <p className='mt-5'>Thank you for visiting our website. <br /> We appreciate your support and look forward <br /> to helping you achieve your goals. <br /> Here's to success and collaboration!</p>
                 </div>
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Data Analytics </a>
-                    <a className="link link-hover">SEO, SEM, SMM</a>
-                    <a className="link link-hover">Google Analytics </a>
-                    <a className="link link-hover">Web Design & Development</a>
-                    <a className="link link-hover">Graphics Design</a>
+                    <Link className="link link-hover" href='/DataVisualization'>Data Visualization </Link>
+                    <Link className="link link-hover" href='/WebAnalytics'>Google Analytics </Link>
+                    <Link className="link link-hover" href='/SEO&SEM&SMM'>SEO, SEM, SMM</Link>
+                    <Link className="link link-hover" href='/GraphicsDesign'>Graphics Design</Link>
+                    <Link className="link link-hover" href='/WebDesign&Development'>Web Design & Development</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Company</h6>

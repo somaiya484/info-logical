@@ -9,11 +9,12 @@ import Message from "../../components/Message";
 import { IoMdCall } from "react-icons/io";
 import Link from "next/link";
 
+
 const DataVisualization = () => {
     const sections = [
         {
             id: 1,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/looker.png",
             title: "Looker Studio",
             description:
                 "Our Expert Looker Master will transform your data into clear, actionable insights with Looker Studio. We design custom dashboards and reports that help you visualize your data and make informed business decisions.",
@@ -90,12 +91,13 @@ const DataVisualization = () => {
 
     return (
         <div className="bg-white text-black">
-            <div className="bg-fixed bg-[url('https://i.ibb.co/CQPDZv7/marvin-meyer-SYTO3xs06f-U-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
-                <div className="absolute inset-0 bg-black opacity-80"></div>
+            
+            <div className="bg-fixed bg-[url('/datavisualization.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
+                <div className="absolute inset-0 bg-black opacity-85"></div>
                 <div className="text-center relative z-10 text-white">
                     <h1 className="font-semibold">Data Visualization</h1>
-                    <h2 className="text-5xl my-8 leading-10 font-semibold">
-                        Empower Your Business with{" "}
+                    <h2 className="text-5xl my-8 leading-[50px] font-semibold">
+                        Empower Your Business with{" "} <br />
                         <span className="text-gradient font-bold">Data Visualization</span>
                     </h2>
                     <p>
