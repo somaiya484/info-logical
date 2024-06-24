@@ -1,23 +1,46 @@
 "use client"
 import React, { useState } from 'react';
-import { IoMdMenu, IoMdCall } from "react-icons/io";
+import { IoMdMenu, IoMdCall, IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
-import logo from "../../public/Logo.jpg"
+import logo from "../../public/Logo.jpg";
 import Link from "next/link";
 
 const Navbar = () => {
-    const Links = [
-        { name: " Data Visualization", link: "/DataVisualization" },
-        { name: "Web Analytics", link: "/WebAnalytics" },
-        { name: "SEO SEM SMM", link: "/SEO&SEM&SMM" },
-        { name: "Graphic Design", link: "/GraphicsDesign" },
-        { name: "Web Design & Development", link: "/WebDesign&Development" },
+    const mainLinks = [
+        { name: "Looker", link: "/Looker" },
+        { 
+            name: "Analytics", 
+            subLinks: [
+                { name: "Data Analytics", link: "/DataAnalytics" },
+                { name: "Web and App", link: "/WebAppAnalytics" },
+            ]
+        },
+        { 
+            name: "Marketing", 
+            subLinks: [
+                { name: "SEM", link: "/SEM" },
+                { name: "SMM", link: "/SMM" },
+            ]
+        },
+        { 
+            name: "Design and Development", 
+            subLinks: [
+                { name: "Graphic Design", link: "/GraphicsDesign" },
+                { name: "Development", link: "/Development" },
+            ]
+        },
     ];
+
     const [open, setOpen] = useState(false);
+    const [openSubMenu, setOpenSubMenu] = useState(null);
+
+    const handleSubMenuToggle = (index) => {
+        setOpenSubMenu(openSubMenu === index ? null : index);
+    };
 
     return (
-        <div className='w-full relative z-50'>
-            <div className='flex items-center justify-between bg-white py-4 md:py-6 md:px-2 px-6 shadow-md'>
+        <div className='w-full fixed top-0 left-0 z-50 bg-white shadow-md'>
+            <div className='flex items-center justify-between py-4 md:py-6 md:px-2 px-6 w-full max-w-screen'>
                 <div className='flex items-center'>
                     <Link href='/'>
                         <Image src={logo}
@@ -35,9 +58,32 @@ const Navbar = () => {
 
                 <ul className={`md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-40 left-0 w-full md:w-auto md:pl-0 pl-6 transition-all duration-500 ease-in ${open ? 'top-20' : '-top-32'} ${open ? 'flex-col md:flex-row' : 'hidden'}`}>
                     {
-                        Links.map((link) => (
-                            <li key={link.name} className='md:ml-4 lg:ml-6 md:mt-0 mt-2'>
-                                <Link href={link.link} className='text-gray-800 hover:text-orange-600 focus:text-orange-600 duration-200 block md:inline-block font-semibold'>{link.name}</Link>
+                        mainLinks.map((mainLink, index) => (
+                            <li key={mainLink.name} className='md:ml-4 lg:ml-6 md:mt-0 mt-2 relative group'>
+                                <div className='flex items-center'>
+                                    <Link href={mainLink.link || '#'} className='text-gray-800 hover:text-orange-600 focus:text-orange-600 duration-200 block md:inline-block font-semibold' onClick={() => handleSubMenuToggle(index)}>
+                                        {mainLink.name}
+                                    </Link>
+                                    {mainLink.subLinks && (
+                                        <IoIosArrowDown className='ml-1 text-lg text-gray-600' />
+                                    )}
+                                </div>
+                                {mainLink.subLinks && openSubMenu === index && (
+                                    <ul className='absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md z-50'>
+                                        {
+                                            mainLink.subLinks.map((subLink) => (
+                                                <li key={subLink.name}>
+                                                    <Link href={subLink.link} className='block px-4 py-2 text-gray-800 hover:bg-orange-100'>
+                                                        {subLink.name}
+                                                    </Link>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                )}
+                                {mainLink.subLinks && (
+                                    <div className='absolute -top-4 right-0 text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity'>click</div>
+                                )}
                             </li>
                         ))
                     }
