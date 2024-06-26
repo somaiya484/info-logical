@@ -11,8 +11,8 @@ const Navbar = () => {
         { 
             name: "Analytics", 
             subLinks: [
-                { name: "Data Analytics", link: "/DataAnalytics" },
-                { name: "Web and App", link: "/WebAppAnalytics" },
+                { name: "Data Visualization", link: "/DataVisualization" },
+                { name: "Web and App", link: "/WebAnalytics" },
             ]
         },
         { 
@@ -25,8 +25,8 @@ const Navbar = () => {
         { 
             name: "Design and Development", 
             subLinks: [
-                { name: "Graphic Design", link: "/GraphicsDesign" },
-                { name: "Development", link: "/Development" },
+                { name: "Graphic Design", link: "/GraphicsDesign"},
+                { name: "Development", link: "/WebDesign&Development" },
             ]
         },
     ];
@@ -40,7 +40,9 @@ const Navbar = () => {
 
     return (
         <div className='w-full fixed top-0 left-0 z-50 bg-white shadow-md'>
-            <div className='flex items-center justify-between py-4 md:py-6 md:px-2 px-6 w-full max-w-screen'>
+
+            <div className='container mx-auto flex items-center justify-between py-4 md:py-6 px-6'>
+                
                 <div className='flex items-center'>
                     <Link href='/'>
                         <Image src={logo}
@@ -56,7 +58,7 @@ const Navbar = () => {
                     <IoMdMenu />
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-40 left-0 w-full md:w-auto md:pl-0 pl-6 transition-all duration-500 ease-in ${open ? 'top-20' : '-top-32'} ${open ? 'flex-col md:flex-row' : 'hidden'}`}>
+                <ul className={`md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white md:z-auto z-70 left-0 w-full md:w-auto md:pl-0 pl-6 transition-all duration-500 ease-in ${open ? 'top-20' : '-top-32'} ${open ? 'flex-col md:flex-row' : 'hidden'}`}>
                     {
                         mainLinks.map((mainLink, index) => (
                             <li key={mainLink.name} className='md:ml-4 lg:ml-6 md:mt-0 mt-2 relative group'>

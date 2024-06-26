@@ -15,7 +15,7 @@ const WebDesignDevelopment = () => {
     const sections = [
         {
             id: 1,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/WordPressDevelopment.jpg",
             title: "WordPress Development:",
             description:
                 "Leverage the power and flexibility of WordPress to build a dynamic and scalable website. Our team creates custom themes and plugins to meet your specific needs, ensuring your site is both user-friendly and SEO-optimized.",
@@ -23,7 +23,7 @@ const WebDesignDevelopment = () => {
         },
         {
             id: 2,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/ShopifyDevelopment.png",
             title: "Shopify Development:",
             description:
                 "Build a robust e-commerce platform with Shopify. We design and develop beautiful, responsive online stores that provide an exceptional shopping experience for your customers while being easy to manage on the backend.",
@@ -31,7 +31,7 @@ const WebDesignDevelopment = () => {
         },
         {
             id: 3,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/wixDevelopment.PNG",
             title: "Wix Development:",
             description:
                 "Create stunning websites quickly with Wix. Our experts use the platform’s versatile tools to craft visually appealing and functional sites tailored to your brand, perfect for small businesses and personal projects.",
@@ -39,7 +39,7 @@ const WebDesignDevelopment = () => {
         },
         {
             id: 4,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/WebDevelopment.jpg",
             title: "Web Development:",
             description:
                 "When your project requires a more bespoke approach, our front-end Development services are here to help. We develop unique, scalable websites and applications tailored precisely to your business requirements. ",
@@ -53,35 +53,35 @@ const WebDesignDevelopment = () => {
             icon: MdOutlineCollectionsBookmark,
             title: "1. Discovery & Planning",
             description:
-                "We start by understanding your goals, target audience, and requirements. This involves thorough research and planning to ensure we have a clear roadmap.",
+                "We start by understanding your goals, target audience, and requirements through thorough research and planning. This ensures we have a clear, strategic roadmap tailored to your unique business needs and objectives.",
         },
         {
             id: 2,
             icon: MdOutlineAppRegistration,
             title: "2. Design & Prototype",
             description:
-                "Our creative team designs a prototype that aligns with your brand identity. We will do whatever is your requirement and necessary to create an intuitive and engaging design.",
+               "Our creative team designs a prototype that aligns with your brand identity and vision. We meticulously address all your requirements to create an intuitive, engaging, and visually compelling design.",
         },
         {
             id: 3,
             icon: MdHourglassFull,
             title: "3. Development",
             description:
-                "Once your design requirements are approved, our developers get to work building your site. We use the latest technologies to ensure your site is fast, secure, and scalable.",
+                "Once design requirements are approved, our developers begin building your site using the latest technologies, ensuring it is fast, and scalable, meeting high standards for performance, reliability, and future growth potential.",
         },
         {
             id: 4,
             icon: MdRecommend,
             title: "4. Testing & Launch",
             description:
-                "Before going live, we conduct thorough testing to ensure everything works perfectly. We then launch your site, ensuring it is fully optimized and ready to perform.",
+                "Before going live, we'll ensure everything works perfectly, and compatibility across different devices and browsers. We then launch site, ensuring it is fully optimized for speed, provide an outstanding user experience.",
         },
         {
             id: 5,
             icon: FaHandsHelping,
-            title: "4. Maintenance & Support",
+            title: "5. Maintenance & Support",
             description:
-                "Post-launch, we offer ongoing maintenance and support to keep your site updated and running smoothly.",
+                "After launching, we provide ongoing maintenance, support to keep your website up to date and running smoothly. Our team promptly addresses issues, and makes necessary changes for a seamless user experience.",
         }
     ];
 
@@ -126,13 +126,13 @@ const WebDesignDevelopment = () => {
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-10 mt-16">
                 {sections.map((section) => (
-                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                    <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="w-[600px] h-[300px]"
+                            className="h-[370px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -156,7 +156,7 @@ const WebDesignDevelopment = () => {
                 If so, you may have just found your people.
             </p>
 
-            <div className="flex flex-col md:flex-row md:mx-14 mt-5  gap-7">
+            <div className="flex flex-col md:flex-row md:mx-24 mt-5  gap-7">
                 <div className="md:w-1/2">
                     {processSteps
                         .filter((_, index) => index % 2 === 0)
@@ -194,7 +194,7 @@ const WebDesignDevelopment = () => {
             {[0, 1, 2].map((row) => (
                 <div
                     key={row}
-                    className={`md:flex items-center gap-10 md:mx-14 py-7 ${row !== 0 ? "-mt-7" : ""
+                    className={`md:flex items-center gap-10 md:mx-24 py-7 ${row !== 0 ? "-mt-7" : ""
                         }`}
                 >
                     {workSamples.map((sample) => (

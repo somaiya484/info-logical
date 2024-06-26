@@ -47,6 +47,14 @@
   animation: animatedgradient 6s ease infinite alternate;
 }
 
+/* styles.css */
+.navbar-container {
+  max-width: 200px; /* Adjust the max-width as per your design */
+  margin: 0 auto;    /* Centers the container */
+  padding: 0 20px;   /* Adds some padding for better spacing */
+}
+
+
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%;

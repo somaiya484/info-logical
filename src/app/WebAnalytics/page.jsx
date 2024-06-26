@@ -15,7 +15,7 @@ const WebAnalytics = () => {
     const sections = [
         {
             id: 1,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/googleTagManager.png",
             title: "Google Tag Manager",
             description:
                 "Implement and manage your website’s tags efficiently with Google Tag Manager. We set up and configure tags to track important data, ensuring you get accurate insights without slowing down your site",
@@ -23,31 +23,30 @@ const WebAnalytics = () => {
         },
         {
             id: 2,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Conversion API",
+            img: "/conversionAPI-preview.png",
             description:
                 "Accurately track conversions and customer interactions with our Conversion API services. We integrate your website with various platforms to provide detailed analytics that help you optimize your marketing strategies.",
             link: "/contact",
         },
         {
-            id: 3,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Pixel Installation",
-            description:
-                "Maximize your ad campaigns' effectiveness with precise pixel tracking. We install and configure tracking pixels from platforms like Facebook and Google to monitor user actions and optimize your marketing efforts.",
-            link: "/contact",
-        },
-        {
             id: 4,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/googleAnalytics.png",
             title: "Google Analytics",
             description:
                 "Optimize your Google Ads campaigns with in-depth analytics and insights. We track and analyze your ad performance, providing detailed reports and recommendations to improve your ad strategies and maximize ROI. From keyword performance to ad spend efficiency, we ensure your Google Ads drive the best possible results.",
             link: "/contact",
         },
         {
+            id: 3,
+            img: "/pixelInstallation.png",
+            title: "Pixel Installation",
+            description:
+                "Maximize your ad campaigns' effectiveness with precise pixel tracking. We install and configure tracking pixels from platforms like Facebook and Google to monitor user actions and optimize your marketing efforts.",
+            link: "/contact",
+        },
+        {
             id: 5,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/everyplatformA.PNG",
             title: "Other Marketing Platforms Analytics ",
             description:
                 "Lastly, our expert team can also provide you with both the client and server sides with Pinterest, Snap, TikTok, Microsoft Ads, and Twitter Linkedin Conversion Tracking",
@@ -134,13 +133,13 @@ const WebAnalytics = () => {
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-10 mt-16">
                 {sections.map((section) => (
-                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                    <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="w-[600px] h-[300px]"
+                            className="h-[350px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -154,17 +153,23 @@ const WebAnalytics = () => {
             </div>
 
             {/* Our Visualization Process - 3rd section */}
+
+            {/* <div className='absolute left-0 w-full h-full flex justify-center items-center -mt-64'>
+                <div className='h-[300px] w-[800px] bg-[radial-gradient(circle,_rgba(255,183,77,0.8)_0%,_rgba(255,123,0,0.6)_50%,_rgba(255,69,0,0.4)_100%)] blur-xl'></div>
+            </div> */}
+
+
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Our Analytics Process
             </h1>
-            <p className="text-center">
+            <p className="text-center" >
                 Do you dream of exploring the furthest reaches of outer space? <br />
                 Do you live for bringing brands to life and finding new ways to tell exciting
                 brand stories? <br />
                 If so, you may have just found your people.
             </p>
 
-            <div className="flex flex-col md:flex-row md:mx-14 mt-5  gap-7">
+            <div className="flex flex-col md:flex-row mx-10 md:mx-24 mt-5  gap-7">
                 <div className="md:w-1/2">
                     {processSteps
                         .filter((_, index) => index % 2 === 0)
@@ -202,7 +207,7 @@ const WebAnalytics = () => {
             {[0, 1, 2].map((row) => (
                 <div
                     key={row}
-                    className={`md:flex items-center gap-10 md:mx-14 py-7 ${row !== 0 ? "-mt-7" : ""
+                    className={`md:flex items-center gap-10 md:mx-24 py-7 ${row !== 0 ? "-mt-7" : ""
                         }`}
                 >
                     {workSamples.map((sample) => (

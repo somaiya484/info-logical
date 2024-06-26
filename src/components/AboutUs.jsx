@@ -1,12 +1,20 @@
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import aboutUsImage from '../../public/aboutus.jpg'
+import Image from 'next/image'
 
 const AboutUs = () => {
     return (
         <div className='mt-40'>
 
+            <div className='w-[85%] mx-auto md:flex items-center gap-14 mt-10'>
 
-            <div className='w-[85%] mx-auto md:flex items-center gap-20 mt-10'>
-                <img className='md:w-[36%] md:ml-10 mb-3' src="https://i.ibb.co/0jxg25j/a39a2531-21fa-434e-b538-93170ef683b6.jpg" alt="" />
+                <Image
+                    src={aboutUsImage}
+                    width={500}
+                    height={500}
+                    alt="Picture of the author"
+                    className='md:w-[600px] md:ml-5'
+                />
 
                 <div className='md:pr-16 text-balance text-center md:text-left'>
                     <h2 className=' font-bold primary-text'>Who We Are</h2>
@@ -16,7 +24,9 @@ const AboutUs = () => {
                     <button className='primary-button'>Explore Services <MdKeyboardDoubleArrowDown className='text-xl' /></button>
 
                 </div>
+
             </div>
+
         </div>
     );
 };
