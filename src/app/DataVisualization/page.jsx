@@ -22,7 +22,7 @@ const DataVisualization = () => {
         },
         {
             id: 2,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/powerBi.jpg",
             title: "Power BI",
             description:
                 "Unlock the power of your data with Microsoft Power BI. Our experts create interactive dashboards and reports that provide in-depth insights into your business performance, helping you drive strategic decisions.",
@@ -110,13 +110,13 @@ const DataVisualization = () => {
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="flex justify-between items-center md:mx-14 gap-10">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-16 mt-16">
                 {sections.map((section) => (
-                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                    <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="w-[600px] h-[300px]"
+                            className="h-[370px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -127,7 +127,7 @@ const DataVisualization = () => {
                         </Link>
                     </div>
                 ))}
-            </div>
+            </div>            
 
             {/* Our Visualization Process - 3rd section */}
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">

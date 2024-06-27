@@ -6,11 +6,11 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Company from "../components/Company";
 import ContactEmail from "../components/ContactEmail";
 import Testimonial from "../components/Testimonial";
+import FaqComponent from "../components/FaqComponent";
 
 const Home = () => {
   return (
     <div className='bg-white text-black font-sans  max-w-screen'>
-
       <Banner></Banner>
       <AboutUs></AboutUs>
       <Service></Service>
@@ -19,17 +19,7 @@ const Home = () => {
       <Company></Company>
       <ContactEmail></ContactEmail>
       <Testimonial></Testimonial>
-
-
-
-      {/* <ConsumerData></ConsumerData> */}
-      {/* <ClickPinnacle></ClickPinnacle> */}
-      {/* <CompanyGrowth></CompanyGrowth> */}
-      {/* <Strategic></Strategic> */}
-      {/* <Message></Message> */}
-      {/* <MarketDetails></MarketDetails> */}
-      {/* <OurPackage></OurPackage> */}
-
+      <FaqComponent></FaqComponent>
     </div>
   );
 };

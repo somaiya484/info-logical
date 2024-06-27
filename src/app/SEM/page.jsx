@@ -15,44 +15,28 @@ const SEOSEMSMM = () => {
     const sections = [
         {
             id: 1,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Search Engine Optimization (SEO)",
+            img: "/seoPage.jpg",
+            title: "SEO",
             description:
                 "Our SEO strategies are designed to improve your website's visibility in search engine results pages (SERPs), driving organic traffic and increasing your online presence. From on-page optimization to keyword research and content strategy, we ensure your website is optimized to rank higher and attract relevant visitors.",
             link: "/contact",
         },
         {
             id: 2,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Search Engine Marketing (SEM)",
+            img: "/googleAdsCampaigns.png",
+            title: "Google Ads Campaigns",
             description:
-                " With SEM, we leverage paid advertising platforms like Google Ads to reach potential customers who are actively searching for products or services like yours. Our SEM campaigns are data-driven and targeted, maximizing your ROI and driving qualified traffic to your website.",
+                " Drive targeted traffic to your website with effective Google Ads campaigns. We create, manage, and optimize your ads to ensure maximum ROI, helping you reach potential customers exactly when they’re searching for your products or services.",
             link: "/contact",
         },
         {
             id: 3,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Social Media Marketing (SMM)",
+            img: "/bingAds.jpeg",
+            title: "Bing Ads",
             description:
-                "Through strategic social media marketing, we help you connect with your audience, build brand awareness, and drive engagement across popular platforms such as Facebook, Instagram, and Twitter. From social media audits to content creation and campaign management, we tailor our approach to align with your business goals and target audience",
+                " Drive targeted traffic to your website with effective Google Ads campaigns. We create, manage, and optimize your ads to ensure maximum ROI, helping you reach potential customers exactly when they’re searching for your products or services.",
             link: "/contact",
-        },
-        {
-            id: 4,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Google Ads Campaigns",
-            description:
-                "Drive targeted traffic to your website with effective Google Ads campaigns. We create, manage, and optimize your ads to ensure maximum ROI, helping you reach potential customers exactly when they’re searching for your products or services.",
-            link: "/contact",
-        },
-        {
-            id: 5,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
-            title: "Facebook Ads Campaigns",
-            description:
-                "Engage with your audience on the world’s largest social media platform. Our team designs and manages Facebook Ads that resonate with your target market, driving traffic, leads, and sales.",
-            link: "/contact",
-        },
+        }
     ];
 
     const processSteps = [
@@ -79,14 +63,14 @@ const SEOSEMSMM = () => {
         },
         {
             id: 4,
-            icon:FaHandsHelping ,
+            icon: FaHandsHelping,
             title: "4. Monitoring & Optimization",
             description:
                 "We continuously monitor the performance of your SEO, SEM, and social media efforts, making adjustments and optimizations to ensure maximum ROI and engagement.",
         },
         {
             id: 5,
-            icon:  MdTipsAndUpdates,
+            icon: MdTipsAndUpdates,
             title: "5. Reporting",
             description:
                 "We provide regular reports detailing the progress and results of our SEO, SEM, and social media activities, keeping you informed every step of the way.",
@@ -121,11 +105,11 @@ const SEOSEMSMM = () => {
                 <div className="text-center relative z-10 text-white">
                     <h1 className="font-semibold">SEO & SEM & SMM</h1>
                     <h2 className="text-5xl my-8 font-semibold leading-[60px]">
-                    Elevate Your Online Presence <br /> with Comprehensive <br /> {" "}
+                        Elevate Your Online Presence <br /> with Comprehensive <br /> {" "}
                         <span className="text-gradient font-bold ">SEO, SEM, Social Media Marketing</span>
                     </h2>
                     <p>
-                    We will provide a full suite of digital marketing services designed to boost your <br /> online visibility, drive targeted traffic, and engage your audience. Our expert team integrates SEO, SEM, <br />and social media marketing strategies to ensure your brand reaches its full potential 
+                        We will provide a full suite of digital marketing services designed to boost your <br /> online visibility, drive targeted traffic, and engage your audience. Our expert team integrates SEO, SEM, <br />and social media marketing strategies to ensure your brand reaches its full potential
                     </p>
                 </div>
             </div>
@@ -134,13 +118,13 @@ const SEOSEMSMM = () => {
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-16 mt-16">
                 {sections.map((section) => (
-                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                    <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="w-[600px] h-[300px]"
+                            className="h-[370px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -152,6 +136,7 @@ const SEOSEMSMM = () => {
                     </div>
                 ))}
             </div>
+
 
             {/* Our Visualization Process - 3rd section */}
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">

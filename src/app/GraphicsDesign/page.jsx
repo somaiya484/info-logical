@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import {
     MdOutlineAppRegistration,
     MdOutlineAssessment,
@@ -15,7 +17,7 @@ const GraphicsDesign = () => {
     const sections = [
         {
             id: 1,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/adContentDesign.jpg",
             title: "Ad Content Design",
             description:
                 "Capture attention and drive action with our expertly designed ad content. We create visually compelling ads for online and offline platforms, ensuring your message stands out in a crowded marketplace.",
@@ -23,7 +25,7 @@ const GraphicsDesign = () => {
         },
         {
             id: 2,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/socialmediaad.png",
             title: "Social Media Graphics",
             description:
                 "Enhance your social media presence with stunning graphics that engage and attract your audience. From Instagram posts to Facebook banners, we design visuals that boost your brand’s online profile.",
@@ -31,7 +33,7 @@ const GraphicsDesign = () => {
         },
         {
             id: 3,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/PrintedMarketingMaterials.jpg",
             title: "Print Materials",
             description:
                 "Make a lasting impression with high-quality print designs. We create everything from business cards and brochures to posters and flyers, ensuring your printed materials are as impactful as your digital ones.",
@@ -39,7 +41,7 @@ const GraphicsDesign = () => {
         },
         {
             id: 4,
-            img: "https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg",
+            img: "/brandIdentity.PNG",
             title: "Brand Identity",
             description:
                 "Develop a cohesive and memorable brand identity with our comprehensive design services. We create logos, color schemes, and brand guidelines that reflect your business’s values and vision.",
@@ -99,6 +101,55 @@ const GraphicsDesign = () => {
         },
     ];
 
+    const faqs = [
+        {
+            question: 'What services do you offer?',
+            answer: 'We offer a wide range of marketing services, including website design and development (WordPress, Shopify, Wix, custom-coded), graphics design (ads content design and others without video editing), SEO, SEM (Google ads), Facebook ads, web analytics (Google Tag Manager, Conversion API, Pixel Installation, Google Analytics), and data analytics (Looker Studio, Power BI).',
+        },
+        {
+            question: 'Do you provide custom website development?',
+            answer: 'Yes, we offer custom-coded website development to meet your specific business needs.',
+        },
+        {
+            question: 'Can you help with SEO and SEM?',
+            answer: 'Absolutely! We specialize in SEO and SEM, including Google ads, to help improve your website\'s visibility and drive traffic.',
+        },
+        {
+            question: 'What platforms do you design websites for?',
+            answer: 'We design websites for WordPress, Shopify, Wix, and also offer custom-coded solutions.',
+        },
+        {
+            question: 'Do you offer graphic design services?',
+            answer: 'Yes, we provide graphic design services focused on ads content design and other graphic needs, excluding video editing.',
+        },
+        {
+            question: 'Can you manage my Facebook ads?',
+            answer: 'Yes, we offer comprehensive Facebook ads management to help you reach your target audience effectively.',
+        },
+        {
+            question: 'What web analytics services do you provide?',
+            answer: 'We offer web analytics services including Google Tag Manager, Conversion API, Pixel Installation, and Google Analytics.',
+        },
+        {
+            question: 'Do you provide data analytics services?',
+            answer: 'Yes, we provide data analytics services using Looker Studio and Power BI to help you make informed business decisions.',
+        },
+        {
+            question: 'How can I get started with your services?',
+            answer: 'You can get started by contacting us through our website. We\'ll discuss your needs and create a customized plan for you.',
+        },
+        {
+            question: 'What is your pricing model?',
+            answer: 'Our pricing model varies depending on the service and scope of the project. Please contact us for a detailed quote.',
+        },
+    ];
+
+
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleFAQ = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
     return (
         <div className="bg-white text-black">
             <div className="bg-fixed bg-[url('https://i.ibb.co/CQPDZv7/marvin-meyer-SYTO3xs06f-U-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
@@ -115,17 +166,42 @@ const GraphicsDesign = () => {
                 </div>
             </div>
 
+
+            <div className="max-w-4xl mx-auto p-4">
+      <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
+      <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border rounded-lg p-4">
+            <button
+              className="w-full text-left flex justify-between items-center focus:outline-none"
+              onClick={() => toggleFAQ(index)}
+            >
+              <span className="text-lg font-medium">{faq.question}</span>
+              <span>{activeIndex === index ? '-' : '+'}</span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-500 ${activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+            >
+              <p className="mt-2 text-gray-600">{faq.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+
             {/* Choose Yours one - 2nd section */}
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="grid md:grid-cols-2 mx-6 md:mx-14 gap-10">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-16 mt-16">
                 {sections.map((section) => (
-                    <div key={section.id} className="shadow-inner rounded px-3 py-7">
+                    <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="w-[600px] h-[300px]"
+                            className="h-[370px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -139,6 +215,7 @@ const GraphicsDesign = () => {
             </div>
 
             {/* Our Visualization Process - 3rd section */}
+
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Our Design Process
             </h1>

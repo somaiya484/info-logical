@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.transition-all {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
 .primary-text {
   color: #ca541d;
 }

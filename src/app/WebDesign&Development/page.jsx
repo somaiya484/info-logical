@@ -126,7 +126,7 @@ const WebDesignDevelopment = () => {
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
                 Choose Yours one
             </h1>
-            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-10 mt-16">
+            <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-16 mt-16">
                 {sections.map((section) => (
                     <div key={section.id} className="shadow-xl rounded px-6 py-7">
                         <img

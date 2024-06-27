@@ -1,7 +1,7 @@
 import {
-    MdWifiProtectedSetup,
+    MdOutlineAppRegistration,
     MdOutlineAssessment,
-    MdOutlineDataExploration,
+    MdHourglassFull,
     MdOutlineCollectionsBookmark,
     MdTipsAndUpdates,
 } from "react-icons/md";
@@ -10,46 +10,23 @@ import { IoMdCall } from "react-icons/io";
 import Message from "../../components/Message";
 import Link from "next/link";
 
-const WebAnalytics = () => {
+const SEOSEMSMM = () => {
 
     const sections = [
         {
             id: 1,
-            img: "/googleTagManager.png",
-            title: "Google Tag Manager",
+            img: "/social-media-marketing.jpg",
+            title: "Social Media Marketing",
             description:
-                "Implement and manage your website’s tags efficiently with Google Tag Manager. We set up and configure tags to track important data, ensuring you get accurate insights without slowing down your site",
+                "Through strategic social media marketing, we help you connect with your audience, build brand awareness, and drive engagement across popular platforms such as Facebook, Instagram, and Twitter. From social media audits to content creation and campaign management, we tailor our approach to align with your business goals and target audience",
             link: "/contact",
         },
         {
             id: 2,
-            img: "/conversionAPI-preview.png",
+            img: "/facebookads.jpg",
+            title: "Facebook Ads Campaigns",
             description:
-                "Accurately track conversions and customer interactions with our Conversion API services. We integrate your website with various platforms to provide detailed analytics that help you optimize your marketing strategies.",
-            link: "/contact",
-        },
-        {
-            id: 4,
-            img: "/googleAnalytics.png",
-            title: "Google Analytics",
-            description:
-                "Optimize your Google Ads campaigns with in-depth analytics and insights. We track and analyze your ad performance, providing detailed reports and recommendations to improve your ad strategies and maximize ROI. From keyword performance to ad spend efficiency, we ensure your Google Ads drive the best possible results.",
-            link: "/contact",
-        },
-        {
-            id: 3,
-            img: "/pixelInstallation.png",
-            title: "Pixel Installation",
-            description:
-                "Maximize your ad campaigns' effectiveness with precise pixel tracking. We install and configure tracking pixels from platforms like Facebook and Google to monitor user actions and optimize your marketing efforts.",
-            link: "/contact",
-        },
-        {
-            id: 5,
-            img: "/everyplatformA.PNG",
-            title: "Other Marketing Platforms Analytics ",
-            description:
-                "Lastly, our expert team can also provide you with both the client and server sides with Pinterest, Snap, TikTok, Microsoft Ads, and Twitter Linkedin Conversion Tracking",
+                "Engage with your audience on the world’s largest social media platform. Our team designs and manages Facebook Ads that resonate with your target market, driving traffic, leads, and sales.",
             link: "/contact",
         },
     ];
@@ -57,38 +34,38 @@ const WebAnalytics = () => {
     const processSteps = [
         {
             id: 1,
-            icon: MdWifiProtectedSetup,
-            title: "1. Setup & Configuration",
+            icon: MdOutlineCollectionsBookmark,
+            title: "1. Audit & Analysis",
             description:
-                "We set up and configure analytics tools on your website, ensuring accurate data collection.",
+                " We start with a thorough audit of your current online presence, including website performance, keyword rankings, competitive analysis, and social media engagement.",
         },
         {
             id: 2,
-            icon: MdOutlineDataExploration,
-            title: "2. Data Collection & Integration",
+            icon: MdOutlineAppRegistration,
+            title: "2. Strategy Development",
             description:
-                "We integrate various data sources to provide a holistic view of your website's performance and user interactions..",
+                " Based on our findings, we develop a customized strategy that includes on-page SEO optimization, keyword research, targeted SEM ad campaigns, and tailored social media plans.",
         },
         {
             id: 3,
-            icon: MdOutlineCollectionsBookmark,
-            title: "3. Analysis & Interpretation",
+            icon: MdHourglassFull,
+            title: "3. Implementation",
             description:
-                "Our team analyzes the collected data to identify trends, patterns, and areas for improvement.",
+                "Our team implements the strategy, optimizes your website content and structure for SEO, sets up effective SEM campaigns on platforms like Google Ads, and creates engaging content for social media platforms like Facebook, Instagram, and Twitter.",
         },
         {
             id: 4,
-            icon: MdTipsAndUpdates,
-            title: "4. Reporting",
+            icon:FaHandsHelping ,
+            title: "4. Monitoring & Optimization",
             description:
-                "We deliver detailed reports that provide actionable insights and recommendations based on our analysis.",
+                "We continuously monitor the performance of your SEO, SEM, and social media efforts, making adjustments and optimizations to ensure maximum ROI and engagement.",
         },
         {
             id: 5,
-            icon: FaHandsHelping,
-            title: "5. Continuous Improvement",
+            icon:  MdTipsAndUpdates,
+            title: "5. Reporting",
             description:
-                "We work with you to implement changes and track their impact, continuously optimizing your web analytics strategy.",
+                "We provide regular reports detailing the progress and results of our SEO, SEM, and social media activities, keeping you informed every step of the way.",
         },
     ];
 
@@ -115,16 +92,16 @@ const WebAnalytics = () => {
 
     return (
         <div className="bg-white text-black">
-            <div className="bg-fixed bg-[url('https://i.ibb.co/dDQSgyb/visual.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
+            <div className="bg-fixed bg-[url('https://i.ibb.co/CQPDZv7/marvin-meyer-SYTO3xs06f-U-unsplash.jpg')] h-[600px] w-full flex justify-center items-center relative overflow-auto">
                 <div className="absolute inset-0 bg-black opacity-80"></div>
                 <div className="text-center relative z-10 text-white">
-                    <h1 className="font-semibold">Web Analytics</h1>
+                    <h1 className="font-semibold">SEO & SEM & SMM</h1>
                     <h2 className="text-5xl my-8 font-semibold leading-[60px]">
-                        Unlock Actionable Insights with Advanced <br /> {" "}
-                        <span className="text-gradient font-bold ">Web Analytics</span>
+                    Elevate Your Online Presence <br /> with Comprehensive <br /> {" "}
+                        <span className="text-gradient font-bold ">SEO, SEM, Social Media Marketing</span>
                     </h2>
                     <p>
-                        Info Logic Solution offers comprehensive web analytics services to <br /> help you understand your website's performance and user behavior for both client and server sides. <br /> We use tools like Google Tag Manager, Conversion API, Google Analytics, <br /> and other marketing platforms to provide insights that drive informed business decisions.
+                    We will provide a full suite of digital marketing services designed to boost your <br /> online visibility, drive targeted traffic, and engage your audience. Our expert team integrates SEO, SEM, <br />and social media marketing strategies to ensure your brand reaches its full potential 
                     </p>
                 </div>
             </div>
@@ -139,7 +116,7 @@ const WebAnalytics = () => {
                         <img
                             src={section.img}
                             alt={section.title}
-                            className="h-[350px] w-full bg-orange-300"
+                            className="h-[370px] w-full bg-orange-300"
                         />
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
@@ -153,29 +130,23 @@ const WebAnalytics = () => {
             </div>
 
             {/* Our Visualization Process - 3rd section */}
-
-            {/* <div className='absolute left-0 w-full h-full flex justify-center items-center -mt-64'>
-                <div className='h-[300px] w-[800px] bg-[radial-gradient(circle,_rgba(255,183,77,0.8)_0%,_rgba(255,123,0,0.6)_50%,_rgba(255,69,0,0.4)_100%)] blur-xl'></div>
-            </div> */}
-
-
             <h1 className="text-gradient font-bold text-center text-6xl mt-32 mb-10">
-                Our Analytics Process
+                Our Optimazation Process
             </h1>
-            <p className="text-center" >
+            <p className="text-center">
                 Do you dream of exploring the furthest reaches of outer space? <br />
                 Do you live for bringing brands to life and finding new ways to tell exciting
                 brand stories? <br />
                 If so, you may have just found your people.
             </p>
 
-            <div className="flex flex-col md:flex-row mx-10 md:mx-24 mt-5  gap-7">
+            <div className="flex flex-col md:flex-row md:mx-14 mt-5  gap-7">
                 <div className="md:w-1/2">
                     {processSteps
                         .filter((_, index) => index % 2 === 0)
                         .map((step) => (
                             <div key={step.id} className="flex items-center gap-7 mt-16">
-                                <step.icon className="bg-orange-600 p-2 w-[60px] rounded-full text-5xl text-white" />
+                                <step.icon className="bg-orange-600 p-2 w-[100px] rounded-full text-5xl text-white" />
                                 <div>
                                     <h3 className="text-2xl font-semibold">{step.title}</h3>
                                     <p>{step.description}</p>
@@ -188,7 +159,7 @@ const WebAnalytics = () => {
                         .filter((_, index) => index % 2 !== 0)
                         .map((step) => (
                             <div key={step.id} className="flex items-center gap-7 mt-16">
-                                <step.icon className="bg-orange-600 p-2 w-[70px] text-center rounded-full text-5xl text-white" />
+                                <step.icon className="bg-orange-600 p-2 w-[100px] text-center rounded-full text-5xl text-white" />
                                 <div>
                                     <h3 className="text-2xl font-semibold">{step.title}</h3>
                                     <p>{step.description}</p>
@@ -207,7 +178,7 @@ const WebAnalytics = () => {
             {[0, 1, 2].map((row) => (
                 <div
                     key={row}
-                    className={`md:flex items-center gap-10 md:mx-24 py-7 ${row !== 0 ? "-mt-7" : ""
+                    className={`md:flex items-center gap-10 md:mx-14 py-7 ${row !== 0 ? "-mt-7" : ""
                         }`}
                 >
                     {workSamples.map((sample) => (
@@ -225,7 +196,7 @@ const WebAnalytics = () => {
             {/* 4th section */}
             <div className="w-2/4 mx-auto py-32">
                 <h1 className="text-gradient font-bold text-6xl mb-10">
-                    Let's Talk <br /> about Analytics
+                    Let's Talk <br /> about Optimization
                 </h1>
                 <p>
                     We thrive on innovation and turning brilliant ideas into reality. Our goal is
@@ -243,4 +214,4 @@ const WebAnalytics = () => {
     );
 };
 
-export default WebAnalytics;
+export default SEOSEMSMM;
