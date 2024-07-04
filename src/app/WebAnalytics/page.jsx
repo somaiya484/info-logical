@@ -136,11 +136,11 @@ const WebAnalytics = () => {
             <div className="grid md:grid-cols-2 mx-6 md:mx-24 gap-16 mt-16">
                 {sections.map((section) => (
                     <div key={section.id} className="shadow-xl rounded px-6 py-7">
-                        <img
+                        {/* <img
                             src={section.img}
                             alt={section.title}
                             className="h-[350px] w-full bg-orange-300"
-                        />
+                        /> */}
                         <h2 className="text-4xl my-5">{section.title}</h2>
                         <p>{section.description}</p>
                         <Link href={section.link}>
@@ -212,7 +212,7 @@ const WebAnalytics = () => {
                 >
                     {workSamples.map((sample) => (
                         <div key={sample.id} className="shadow-lg py-7 px-4 rounded-lg">
-                            <img className="rounded" src={sample.img} alt={sample.title} />
+                            {/* <img className="rounded" src={sample.img} alt={sample.title} /> */}
                             <div className="flex items-center gap-4 mt-5">
                                 <sample.icon className="bg-orange-600 p-2 rounded-full text-5xl text-white" />
                                 <h3 className="text-2xl">{sample.title}</h3>

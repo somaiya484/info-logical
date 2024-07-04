@@ -56,9 +56,9 @@ const Contact = () => {
 
             {/* section 2 */}
             <div className="md:flex px-8 gap-16 items-center bg-orange-700 py-28 w-full text-white">
-                <img className="grayscale absolute right-32 mix-blend-soft-light scale-x-[-1] w-[400px]" src="https://i.ibb.co/tZ8W1T2/comdlpng6951357-removebg-preview.png" alt="" />
+                {/* <img className="grayscale absolute right-32 mix-blend-soft-light scale-x-[-1] w-[400px]" src="https://i.ibb.co/tZ8W1T2/comdlpng6951357-removebg-preview.png" alt="" /> */}
                 <div className="md:w-[50%] -ml-8">
-                    <img className="rounded-e-3xl" src="https://i.ibb.co/DR8F12f/5701942eaadd4f6305f371d8f5dde7ed.jpg" alt="" />
+                    {/* <img className="rounded-e-3xl" src="https://i.ibb.co/DR8F12f/5701942eaadd4f6305f371d8f5dde7ed.jpg" alt="" /> */}
                 </div>
 
                 <div className="md:w-[50%] mt-10 md:mt-0">
