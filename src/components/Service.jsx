@@ -5,195 +5,108 @@ import SEO from "../../public/seo.jpg";
 import SEM from "../../public/SEM.jpg";
 import web from "../../public/designdevelopment.jpg";
 
+const services = [
+    {
+        id: 1,
+        imageSrc: DataVisualization,
+        title: "Data Visualization",
+        description: "Empowering your business with advanced analytics through Looker Studio and Power BI.",
+        features: ["Looker Studio", "Power BI"]
+    },
+    {
+        id: 2,
+        imageSrc: analysis,
+        title: "Web Analytics",
+        description: "Unlocking insights with Google Tag Manager, Conversion API, Pixel Installation, and Google Analytics.",
+        features: ["Google Analytics", "Facebook conversion API", "Google Tag Manager", "Pixel Installation"]
+    },
+    {
+        id: 3,
+        imageSrc: SEO,
+        title: "SEO & SEM",
+        description: "Boosting your online visibility with expert SEO strategies. Driving targeted traffic with effective Google Ads campaigns.",
+        features: ["SEO strategies", "SEM"]
+    },
+    {
+        id: 4,
+        imageSrc: SEM,
+        title: "Social Media Marketing",
+        description: "Engaging your audience with impactful and strategic Facebook Ads.",
+        features: ["Google ads", "Facebook ads"]
+    },
+    {
+        id: 5,
+        imageSrc: web,
+        title: "Design & Development",
+        description: "Crafting beautiful and functional websites on WordPress, Shopify, and Wix. Delivering custom-coded solutions tailored to your unique needs.",
+        features: ["WordPress Design & Development", "Shopify Design & Development", "Wix Design & Development", "Frontend Development"]
+    }
+];
+
 const Service = () => {
     return (
         <div className='mt-32'>
-            <h2 className='text-center text-5xl font-bold primary-text'>Things we provide!</h2>
-            <p className="text-center md:text-xl my-6"> Let's take your brand to the next level with our comprehensive suite of <br /> marketing services.</p>
+            <div className="text-center">
+                <h2 className="text-5xl font-bold primary-text mb-6">
+                    Things we provide!
+                </h2>
 
-
-            <div className="grid grid-cols-2 gap-12  md:mx-32 mt-16">
-
-                <div className="shadow-inner rounded px-3 py-7 ">
-                    <Image
-                        src={DataVisualization}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        className="w-[700px] h-[300px]"
+                <p className="text-xl">
+                    Let's take your brand to the next level with our comprehensive suite of <br /> marketing services.
+                </p>
+                <svg
+                    width="500"
+                    height="60"
+                    viewBox="0 0 200 40"
+                    className="mx-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M 20 30 Q 100 0 180 30"
+                        stroke="url(#gradient)"
+                        strokeWidth="4"
+                        fill="transparent"
                     />
-
-                    <h2 className="text-4xl my-5">Data Visualization</h2>
-                    <p >Empowering your business with advanced analytics through Looker Studio and Power BI.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">Looker Studio</p>
-                        <p className="border-b w-full border-gray-300">Power BI</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7 ">
-                    <Image
-                        src={analysis}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        className="w-[700px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Web Analytics</h2>
-                    <p >Unlocking insights with Google Tag Manager, Conversion API, Pixel Installation, and Google Analytics.</p>
-                    <div className="flex items-center justify-between gap-5 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">Google Analytics</p>
-                        <p className="border-b w-full border-gray-300">Facebook conversion API</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Google Tag Manager</p>
-                        <p className="border-b w-full border-gray-300">Pixel Installation</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <Image
-                        src={SEO}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        className="w-[700px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">SEO & SEM</h2>
-                    <p >Boosting your online visibility with expert SEO strategies.Driving targeted traffic with effective Google Ads campaigns.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">SEO strategies</p>
-                        <p className="border-b w-full border-gray-300">SEM</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Wix Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Frontend Development</p>
-                    </div>
-                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <Image
-                        src={SEM}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        className="w-[700px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Social Media Marketing</h2>
-                    <p >Engaging your audience with impactful and strategic Facebook Ads.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300 ">Google ads</p>
-                        <p className="border-b w-full border-gray-300">Facebook ads</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <Image
-                        src={web}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        className="w-[700px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Design & Development</h2>
-                    <p >Crafting beautiful and functional websites on WordPress, Shopify, and Wix. Delivering custom-coded solutions tailored to your unique needs.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">WordPress Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Shopify Design & Development</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Wix Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Frontend Development</p>
-                    </div>
-                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
-                </div>
-
+                    <defs>
+                        <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stopColor="#f97316" />
+                            <stop offset="50%" stopColor="#ef4444" />
+                            <stop offset="100%" stopColor="#f59e0b" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
 
-
-
-            {/* <div className="md:flex justify-center items-center gap-16">
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/wdz3ZXC/domenico-loia-h-GV2-Tf-Oh0ns-unsplash.jpg" alt="" className="w-[600px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">Design & Development</h2>
-                    <p >Crafting beautiful and functional websites on WordPress, Shopify, and Wix. Delivering custom-coded solutions tailored to your unique needs.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">WordPress Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Shopify Design & Development</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mx-10 md:mx-24 mt-10">
+                {services.map(service => (
+                    <div key={service.id} className="shadow-lg rounded p-6 transition-transform transform hover:scale-105 hover:shadow-xl service-bg flex flex-col justify-between duration-300">
+                        <div>
+                            <Image
+                                src={service.imageSrc}
+                                width={500}
+                                height={500}
+                                alt={service.title}
+                                className="w-full h-[300px] object-cover rounded"
+                            />
+                            <h2 className="text-4xl my-5 font-semibold">{service.title}</h2>
+                            <p className="text-gray-700 mb-6">{service.description}</p>
+                            <div className="flex items-center justify-between gap-10 mt-8 mb-5">
+                                {service.features.slice(0, 2).map((feature, index) => (
+                                    <p key={index} className="border-b w-full border-gray-300">{feature}</p>
+                                ))}
+                            </div>
+                            {service.features.length > 2 && (
+                                <div className="flex items-center justify-between gap-10 mb-5 font-semibold">
+                                    {service.features.slice(2).map((feature, index) => (
+                                        <p key={index} className="border-b w-full border-gray-300">{feature}</p>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                        <button className='secondary-button mt-8 hover:scale-105 transition-transform duration-300 self-start'>Learn More</button>
                     </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Wix Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Frontend Development</p>
-                    </div>
-                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/kyyWgyL/lukas-muller-Q4i-YWs-Wb-R90-unsplash.jpg" alt="" className="w-[1000px] h-[300px]"
-                    />
-                    <h2 className="text-4xl my-5">SEO & SEM</h2>
-                    <p >Boosting your online visibility with expert SEO strategies.Driving targeted traffic with effective Google Ads campaigns.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">SEO strategies</p>
-                        <p className="border-b w-full border-gray-300">SEM</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Wix Design & Development</p>
-                        <p className="border-b w-full border-gray-300">Frontend Development</p>
-                    </div>
-                    <button className='secondary-button mt-5 hover:scale-100 md:w-[130px]'>Learn More</button>
-                </div>
+                ))}
             </div>
-
-           
-            <div className="md:flex justify-center items-center gap-10 md:mx-32 mt-14">
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/WGPmvrD/austin-distel-t-LZh-FRLj6n-Y-unsplash.jpg" className="w-[700px] h-[300px]" alt=""
-                    />
-                    <h2 className="text-4xl my-5">Social Media Marketing</h2>
-                    <p >Engaging your audience with impactful and strategic Facebook Ads.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300 ">Google ads</p>
-                        <p className="border-b w-full border-gray-300">Facebook ads</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7">
-                    <img src="https://i.ibb.co/R9zxRxq/agence-olloweb-qfp4-Ud6-Fyg-unsplash.jpg" className="w-[700px] h-[280px]" alt=""
-                    />
-                    <h2 className="text-4xl my-5">Web Analytics</h2>
-                    <p >Unlocking insights with Google Tag Manager, Conversion API, Pixel Installation, and Google Analytics.</p>
-                    <div className="flex items-center justify-between gap-5 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">Google Analytics</p>
-                        <p className="border-b w-full border-gray-300">Facebook conversion API</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-10 my-5">
-                        <p className="border-b w-full border-gray-300">Google Tag Manager</p>
-                        <p className="border-b w-full border-gray-300">Pixel Installation</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-
-                <div className="shadow-inner rounded px-3 py-7 -mt-10">
-                    <img src="https://i.ibb.co/TqPB3g3/myriam-jessier-VHXi-GXxw-OQ4-unsplash.jpg" className="w-[700px] h-[300px]" alt=""
-                    />
-                    <h2 className="text-4xl my-5">Data Analytics</h2>
-                    <p >Empowering your business with advanced analytics through Looker Studio and Power BI.</p>
-                    <div className="flex items-center justify-between gap-10 mt-8 mb-5 ">
-                        <p className="border-b w-full border-gray-300">Looker Studio</p>
-                        <p className="border-b w-full border-gray-300">Power BI</p>
-                    </div>
-                    <button className='secondary-button mt-5  hover:scale-100'>Learn More</button>
-                </div>
-            </div> */}
-
         </div>
     );
 };

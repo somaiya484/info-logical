@@ -39,21 +39,25 @@
   @apply bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 text-transparent bg-clip-text;
 }
 
+.bg-gradiant {
+  @apply bg-gradient-to-r from-amber-600 via-orange-600 to-red-500
+}
+
 .primary-button {
   @apply btn bg-btn rounded-xl bg-gradient-to-r from-orange-500 to-red-600 hover:from-red-600 hover:to-orange-400 transition duration-300 ease-in-out text-lg border-none
 }
 
 .secondary-button {
-  @apply btn bg-transparent border-orange-700 hover:border-orange-700 hover:bg-transparent border-2 primary-text text-lg
+  @apply btn bg-transparent border-orange-500 hover:border-orange-700 hover:bg-transparent border-2 primary-text text-lg
 }
+
 .secondary2-button {
-  @apply btn bg-transparent border-red-200 text-white  hover:border-orange-400 hover:bg-transparent border-2 text-lg
+  @apply btn bg-transparent border-red-200 text-white hover:border-orange-400 hover:bg-transparent border-2 text-lg
 }
 
 .services-button {
   @apply bg-white border-white primary-text hover:text-white hover:border-orange-700 hover:bg-orange-700 border-2 px-3 py-1 rounded-full transition duration-200 ease-in-out text-lg
 }
-
 
 .animate-gradient {
   background-size: 300%;
@@ -62,12 +66,38 @@
   animation: animatedgradient 6s ease infinite alternate;
 }
 
-/* styles.css */
 .navbar-container {
-  max-width: 200px; /* Adjust the max-width as per your design */
-  margin: 0 auto;    /* Centers the container */
-  padding: 0 20px;   /* Adds some padding for better spacing */
+  max-width: 200px;
+  /* Adjust the max-width as per your design */
+  margin: 0 auto;
+  /* Centers the container */
+  padding: 0 20px;
+  /* Adds some padding for better spacing */
 }
+
+.gradient-background {
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFD7C2 100%);
+  text-align: center;
+}
+
+.gradient-background2 {
+  position: relative;
+  background: linear-gradient(180deg, #feddcb 0%, #FFFFFF 100%);
+  text-align: center;
+}
+
+.service-bg {
+  position: relative;
+  background: linear-gradient(180deg, #ffeee4 0%, #FFFFFF 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ff7f50, #ff4500, #ffc107);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 
 
 @keyframes animatedgradient {

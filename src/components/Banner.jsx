@@ -1,15 +1,17 @@
-"use client"
-import Image from 'next/image'
+"use client";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative overflow-hidden z-30 gradient-background'>
+      
+      <div className='absolute top-24 -left-24 w-full h-full flex'>
+        <div className='rounded-full h-[200px] w-[200px] bg-[radial-gradient(circle,_rgba(255,165,0,0.8)_0%,_rgba(255,69,0,0.4)_50%,_rgba(255,193,7,0)_100%)] blur-xl'></div>
+      </div>
 
-      {/* Gradient background circle with spread effect */}
-      <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-        <div className='rounded-full h-[600px] w-[600px] bg-[radial-gradient(circle,_rgba(255,165,0,0.8)_0%,_rgba(255,69,0,0.4)_50%,_rgba(255,193,7,0)_100%)] blur-xl'></div>
+      <div className='absolute top-[600px] w-full h-full flex justify-end'>
+        <div className='rounded-full h-[200px] w-[200px] bg-[radial-gradient(circle,_#FFA500CC_0%,_#FF450066_50%,_#FFC10700_100%)] blur-xl'></div>
       </div>
 
       <div className='relative pt-48'>
@@ -22,7 +24,7 @@ const Banner = () => {
         <h2 className='text-3xl md:text-6xl md:w-3/4 mx-auto leading-[60px]'>The Global, Web Design, SEO & Logical Data-Driven <span className='text-gradient font-bold'>Digital Marketing Agency</span></h2>
       </div>
 
-      <div className="relative h-full flex justify-center items-center mt-10 sm:text-lg md:text-xl text-semibold">
+      <div className="relative h-full flex justify-center items-center mt-10 sm:text-lg md:text-xl font-semibold">
         <TypeAnimation
           sequence={[
             'We are passionate about Website Design & Development',
@@ -31,7 +33,7 @@ const Banner = () => {
             1000,
             'We are passionate about Social Media Marketing',
             1000,
-            'We are passionate about SEO & SEM ',
+            'We are passionate about SEO & SEM',
             1000,
             'We are passionate about Web & Data Analytics',
             1000
@@ -47,12 +49,29 @@ const Banner = () => {
         <button className='secondary-button'>Get Free Consultation</button>
       </div>
 
-      <div className='relative text-center mt-10 md:text-lg font-semibold w-3/4 mx-auto'>
+      <div className='relative text-center mt-10 md:text-lg font-semibold w-3/4 mx-auto pb-10 z-10'>
         <p>Go To <span className='text-gradient'>|</span> Easy Contract <span className='text-gradient'>|</span> Specialize Team</p>
       </div>
+
+      {/* Adding a pseudo-element for smooth transition */}
+      <style jsx>{`
+        .gradient-background {
+          background: linear-gradient(to bottom, #FFDAB9, #FFF5EE);
+          position: relative;
+        }
+
+        .gradient-background::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100px;
+          background: linear-gradient(to bottom, rgba(255,213,182,0) 0%, #FFF5EE 100%);
+        }
+      `}</style>
     </div>
   );
 };
 
 export default Banner;
- 

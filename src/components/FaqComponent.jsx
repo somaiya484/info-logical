@@ -20,7 +20,7 @@ const faqs = [
     answer: 'Absolutely! We understand that every business is unique. We provide flexibility for clients to create custom service packages tailored to their specific requirements and budget.',
   },
   {
-    question: 'What are the advantages of hiring your agency over a freelancer?',
+    question: 'Why we hire your agency over a freelancer?',
     answer: 'Choosing our agency offers you a team of specialized professionals across various disciplines, ensuring expertise, reliability, and scalability all together. We provide comprehensive support, consistency in service delivery, and a broader range of capabilities compared to an individual freelancer.',
   },
   {
@@ -49,36 +49,38 @@ const FaqComponent = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto p-4 md:flex justify-between">
+    <div className="w-[95%] mx-auto p-4 md:flex justify-between my-16">
       <div className="w-[20%]">
-       <div>
-       <h1 className="text-5xl font-semibold ">Have More </h1>
-       <h1 className="text-7xl font-semibold mb-8 primary-text ">Questions? </h1>
-       </div>
+        <div>
+          <h1 className="text-4xl font-semibold text-gray-800">Have More </h1>
+          <h1 className="text-7xl font-semibold mb-8 text-red-500">Questions? </h1>
+        </div>
 
-       <div className="mt-24">
-       <h1 className="text-lg font-semibold mb-3">Reach out directly for assistance</h1>
-        <button className='primary-button '>Contact US <IoMdCall className='text-xl' /></button>
-       </div>
+        <div className="mt-24">
+          <h1 className=" font-semibold mb-3 text-gray-600">Reach out directly for assistance</h1>
+          <button className='primary-button bg-orange-500 text-white hover:bg-orange-600'>
+            Contact US <IoMdCall className='text-xl' />
+          </button>
+        </div>
 
       </div>
 
-      <div className="space-y-4 w-[70%]">
+      <div className="space-y-4 w-[65%]">
         {faqs.map((faq, index) => (
-          <div key={index} className="border border-2 border-gray-700 rounded-lg p-4">
+          <div key={index} className="border border-b-8 rounded-lg border-gray-600 p-4  transition-transform transform hover:scale-105 hover:shadow duration-300">
             <button
               className="w-full text-left flex justify-between items-center focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-2xl font-bold">{faq.question}</span>
-              <span  className="text-2xl font-bold">{activeIndex === index ? '-' : '+'}</span>
+              <span className="text-2xl font-bold">{activeIndex === index ? '-' : '+'}</span>
             </button>
 
             <div
               className={`overflow-hidden ${activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               style={{ transition: 'max-height 0.5s ease', maxHeight: activeIndex === index ? '24rem' : '0' }}
             >
-              <p className={`mt-8 font-semibold text-gray-600 text-lg ${activeIndex === index ? 'block' : 'hidden'}`}>{faq.answer}</p>
+              <p className={`mt-8 font-semibold text-gray-700 text-lg ${activeIndex === index ? 'block' : 'hidden'}`}>{faq.answer}</p>
             </div>
 
           </div>

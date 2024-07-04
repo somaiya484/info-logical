@@ -1,94 +1,97 @@
-"use client"
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaQuoteLeft } from "react-icons/fa";
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import './instructor.css';
+
+const testimonials = [
+    {
+        name: "Joon-ho",
+        role: "Instructor of Violin",
+        feedback: "The instructor of Violin is exceptional and very professional.",
+        agency: "Music Academy",
+        rating: 5,
+    },
+    {
+        name: "Mr. Smith",
+        role: "Instructor of Guitar",
+        feedback: "Mr. Smith has a unique way of teaching that makes learning guitar fun.",
+        agency: "Guitar Institute",
+        rating: 5,
+    },
+    {
+        name: "Sarfaraz",
+        role: "Instructor of Piano",
+        feedback: "Sarfaraz is very knowledgeable and has a lot of patience with his students.",
+        agency: "Piano Academy",
+        rating: 5,
+    },
+    {
+        name: "Daniel",
+        role: "Instructor of Cello",
+        feedback: "Daniel is a brilliant instructor who makes learning cello easy.",
+        agency: "Cello School",
+        rating: 5,
+    },
+    {
+        name: "William Edward",
+        role: "Instructor of Trumpet",
+        feedback: "William Edward is a highly skilled instructor with a lot of experience.",
+        agency: "Trumpet Studio",
+        rating: 5,
+    },
+    {
+        name: "George Benjamin",
+        role: "Instructor of Bouzouki",
+        feedback: "George Benjamin is an excellent instructor with a deep understanding of Bouzouki.",
+        agency: "Bouzouki Academy",
+        rating: 5,
+    },
+];
 
 const Testimonial = () => {
     return (
-    <div className='md:py-24 md:flex items-center gap-14 py-6'>
-
-            <div className='pl-10'>
-                <p className='italic text-gray-400 primary-text font-bold'>Reviews</p>
-                <h1 className='text-5xl font-semibold '>They talk about us</h1>
-            </div>
-
+        <div className=" gradient-background2 overflow-hidden py-20">
             <Swiper
-                // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={100}
-                slidesPerView={2}
-                // navigation
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                }}
                 pagination={{ clickable: true }}
-                // scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
-                className='w-[100%]'
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper w-[80%] mx-auto"
             >
-                <SwiperSlide>
-                    <div className=' py-6 px-4'>
-                        <p className='mt-7 italic text-gray-800'>A global financial services company used Rwazi to obtain data on usage and demand of banking and fintech products across 60 cities to boost customer acquisition through consumer-driven products</p>
-
-                        <div className='flex items-center gap-4 my-5'>
-                            <FaQuoteLeft className='primary-text text-2xl w-10  rounded-full' />
-                            <div className='text-sm text-gray-500'>
-                                <h2>Paul Trueman</h2>
-                                <p className='primary-text font-semibold'>Global</p>
-                            </div>
+                {testimonials.map((testimonial, index) => (
+                    <SwiperSlide key={index} className="p-6 bg-white shadow-lg rounded-lg border-l-4 border-orange-500 flex flex-col justify-center items-center text-center">
+                        <div className="mb-4 mt-20">
+                            <h2 className="text-2xl font-bold text-amber-600 italic">{testimonial.name}</h2>
+                            <p className="text-base font-medium text-red-700">{testimonial.role}</p>
+                            <p className="text-sm text-red-500">{testimonial.agency}</p>
                         </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className=' py-6 px-4'>
-                        <p className='mt-7 italic text-gray-800'>A pharmaceutical company used Rwazi to gather data on the availability and pricing of medicines across pharmacies across Nigeria as well as the accessibility of medical services in the country.</p>
-
-                        <div className='flex items-center gap-4 my-5'>
-                            <FaQuoteLeft className='primary-text text-2xl w-10  rounded-full' />
-                            <div className='text-sm text-gray-500'>
-                                <h2>Sam Mith</h2>
-                                <p className='primary-text font-semibold'>CEO Mil Design Studio</p>
-                            </div>
+                        <p className="text-base italic text-gray-800 mb-4">"{testimonial.feedback}"</p>
+                        <div className="flex justify-center items-center">
+                            {Array.from({ length: testimonial.rating }).map((_, i) => (
+                                <span key={i} className="text-orange-400">&#9733;</span>
+                            ))}
+                            {Array.from({ length: 5 - testimonial.rating }).map((_, i) => (
+                                <span key={i} className="text-gray-300">&#9733;</span>
+                            ))}
                         </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className=' py-6 px-4'>
-                        <p className='mt-7 italic text-gray-800'>A global financial services company used Rwazi to obtain data on usage and demand of banking and fintech products across 60 cities to boost customer acquisition through consumer-driven products</p>
-
-                        <div className='flex items-center gap-4 my-5'>
-                            <FaQuoteLeft className='primary-text text-2xl w-10  rounded-full' />
-                            <div className='text-sm text-gray-500'>
-                                <h2>Paul Trueman</h2>
-                                <p className='primary-text font-semibold'>Global</p>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className=' py-6 px-4'>
-                        <p className='mt-7 italic text-gray-800'>A pharmaceutical company used Rwazi to gather data on the availability and pricing of medicines across pharmacies across Nigeria as well as the accessibility of medical services in the country.</p>
-
-                        <div className='flex items-center gap-4 my-5'>
-                            <FaQuoteLeft className='primary-text text-2xl w-10  rounded-full' />
-                            <div className='text-sm text-gray-500'>
-                                <h2>Paul Trueman</h2>
-                                <p className='primary-text font-semibold'>Global</p>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     );
 };
 
 export default Testimonial;
-

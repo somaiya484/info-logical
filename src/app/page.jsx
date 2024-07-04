@@ -7,11 +7,14 @@ import Company from "../components/Company";
 import ContactEmail from "../components/ContactEmail";
 import Testimonial from "../components/Testimonial";
 import FaqComponent from "../components/FaqComponent";
+import BackToTopButton from "../components/BackToTopButton";
+
 
 const Home = () => {
   return (
-    <div className='bg-white text-black font-sans  max-w-screen'>
+    <div className='bg-[#fefefe] text-black font-sans  max-w-screen'>
       <Banner></Banner>
+      <BackToTopButton></BackToTopButton>
       <AboutUs></AboutUs>
       <Service></Service>
       <Message></Message>
