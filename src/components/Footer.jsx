@@ -4,9 +4,7 @@ import logoFooter from '../../public/logoFooter.png';
 
 const Footer = () => {
     return (
-        <Footer>
-
-            <div className="footer bg-slate-900 text-white py-16 px-5">
+        <Footer className="footer bg-slate-900 text-white py-16 px-5">
                 <div className="container mx-auto flex gap-10">
                     <div>
                         <Link href='/'>
@@ -52,10 +50,6 @@ const Footer = () => {
                         </ul>
                     </nav>
                 </div>
-            </div>
-            {/* <div className="border-t border-gray-700 mt-10 pt-5 text-center text-white">
-                &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
-            </div> */}
         </Footer>
 
     );
